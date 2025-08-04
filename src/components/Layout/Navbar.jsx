@@ -1,4 +1,24 @@
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    Swal.fire({
+      icon: "info",
+      title: "Logout Berhasil",
+      text: "Sampai jumpa lagi!",
+      timer: 1500,
+      showConfirmButton: false,
+    });
+
+    setTimeout(() => {
+      localStorage.removeItem("user");
+      navigate("/");
+    }, 1300);
+  };
+
   return (
     <>
       <div className="navbar bg-base-100 shadow-sm">
@@ -40,7 +60,7 @@ const Navbar = () => {
                 <a>Settings</a>
               </li>
               <li>
-                <a>Logout</a>
+                <a onClick={handleLogout}>Logout</a>
               </li>
             </ul>
           </div>
