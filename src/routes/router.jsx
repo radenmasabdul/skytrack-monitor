@@ -1,12 +1,20 @@
 import { Routes, Route } from "react-router-dom";
-import Login from "../pages/auth/login";
-import Dashboard from "../pages/dashboard/dashboard";
+import MainLayouts from "../Layouts/MainLayouts";
+import Login from "../pages/auth/Login";
+import Dashboard from "../pages/dashboard/Dashboard";
 
 const AppRouter = () => {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
-      <Route path="/dashboard" element={<Dashboard />} />
+      <Route
+        path="/dashboard"
+        element={
+          <MainLayouts>
+            <Dashboard />
+          </MainLayouts>
+        }
+      />
     </Routes>
   );
 };

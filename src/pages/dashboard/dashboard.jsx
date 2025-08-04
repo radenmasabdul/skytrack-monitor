@@ -1,13 +1,9 @@
-const dashboard = () => {
-  const user = JSON.parse(localStorage.getItem("user"));
-
+const Dashboard = () => {
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center text-3xl font-bold text-green-600">
-        Selamat datang, {user?.name}!
-      </div>
+      <h1>Ini menu dashboard</h1>
     </>
   );
 };
 
-export default dashboard;
+export default Dashboard;
