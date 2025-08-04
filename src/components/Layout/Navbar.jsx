@@ -55,7 +55,7 @@ const Navbar = () => {
     }`;
 
   return (
-    <div className="navbar bg-base-100 shadow-sm px-4 dark:bg-gray-800">
+    <div className="navbar bg-white shadow-sm px-4 dark:bg-gray-800">
       {/* kiri */}
       <div className="navbar-start gap-4">
         <button
@@ -76,7 +76,7 @@ const Navbar = () => {
 
       {/* tengah */}
       <div className="navbar-center hidden lg:flex">
-        <button className="flex items-center gap-2 text-lg font-semibold dark:text-gray-100">
+        <button className="flex items-center gap-2 text-lg font-semibold text-black dark:text-gray-100">
           <Leaf size={20} />
           Skytrack Monitor
         </button>
@@ -89,7 +89,12 @@ const Navbar = () => {
           name="search"
           id="search"
           placeholder="Cari ID Stasiun"
-          className="input input-sm input-bordered w-32 md:w-52 dark:white"
+          className="h-8 p-2 w-32 md:w-52 rounded-md border text-sm
+             text-black bg-white border-gray-300 
+             placeholder:text-gray-500
+             dark:text-gray-100 dark:bg-gray-800 dark:border-gray-600 
+             dark:placeholder:text-gray-400
+             focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
         />
 
         <button className="relative p-2 rounded-full cursor-pointer">
@@ -112,7 +117,10 @@ const Navbar = () => {
 
         {/* dropdown */}
         <div className="dropdown dropdown-end">
-          <div tabIndex={0} className="flex items-center gap-2 cursor-pointer">
+          <div
+            tabIndex={0}
+            className="flex items-center gap-2 cursor-pointer px-2 py-1 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+          >
             <div className="w-8 h-8 rounded-full overflow-hidden">
               <img
                 src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
@@ -120,12 +128,12 @@ const Navbar = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <span className="text-sm font-medium dark:text-gray-100">
+            <span className="text-sm font-medium text-gray-800 dark:text-gray-100">
               {name}
             </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 dark:text-gray-100"
+              className="h-4 w-4 text-gray-800 dark:text-gray-100"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -138,22 +146,23 @@ const Navbar = () => {
               />
             </svg>
           </div>
+
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 dark:bg-gray-800"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-md bg-white dark:bg-gray-800 rounded-box w-52"
           >
             <li>
-              <a className="dark:text-gray-100 hover:bg-blue-500 hover:text-white">
+              <a className="text-sm text-gray-800 dark:text-gray-100 hover:bg-blue-500 hover:text-white rounded-md px-2 py-1 transition">
                 Profile
               </a>
             </li>
             <li>
-              <a className="dark:text-gray-100 hover:bg-blue-500 hover:text-white">
+              <a className="text-sm text-gray-800 dark:text-gray-100 hover:bg-blue-500 hover:text-white rounded-md px-2 py-1 transition">
                 Settings
               </a>
             </li>
             <li>
-              <div className="flex items-center justify-between px-2 dark:text-gray-100 hover:bg-blue-500 hover:text-white rounded-md">
+              <div className="flex items-center justify-between px-2 py-1 text-sm text-gray-800 dark:text-gray-100 hover:bg-blue-500 hover:text-white rounded-md transition">
                 <span>Dark Mode</span>
                 <input
                   type="checkbox"
@@ -168,7 +177,7 @@ const Navbar = () => {
             <li>
               <a
                 onClick={handleLogout}
-                className="dark:text-gray-100 hover:bg-blue-500 hover:text-white"
+                className="text-sm text-gray-800 dark:text-gray-100 hover:bg-red-500 hover:text-white rounded-md px-2 py-1 transition"
               >
                 Logout
               </a>
