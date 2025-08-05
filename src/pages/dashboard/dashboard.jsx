@@ -1,40 +1,12 @@
-import { MapContainer, TileLayer, LayersControl, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, LayersControl } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
-import "leaflet.heat";
-import { useEffect } from "react";
-
-const heatPoints = [
-  [-6.2, 106.8, 0.5],
-  [-6.21, 106.81, 0.6],
-  [-6.22, 106.82, 0.4],
-  [-6.23, 106.83, 0.8],
-];
-
-function HeatLayer({ points }) {
-  const map = useMap();
-
-  useEffect(() => {
-    const heatLayer = L.heatLayer(points, {
-      radius: 25,
-      blur: 15,
-      maxZoom: 17,
-    }).addTo(map);
-
-    return () => {
-      map.removeLayer(heatLayer);
-    };
-  }, [map, points]);
-
-  return null;
-}
 
 const Dashboard = () => {
   return (
     <>
       <MapContainer
         center={[-6.2, 106.8]}
-        zoom={13}
+        zoom={12}
         style={{ height: "100vh", width: "100%" }}
       >
         <LayersControl position="topleft">
@@ -51,8 +23,6 @@ const Dashboard = () => {
             />
           </LayersControl.BaseLayer>
         </LayersControl>
-
-        <HeatLayer points={heatPoints} />
       </MapContainer>
     </>
   );
