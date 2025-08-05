@@ -36,14 +36,14 @@ const Drawer = () => {
       {collapsed && (
         <button
           onClick={() => setCollapsed(false)}
-          className="cursor-pointer fixed top-[84%] left-0 z-50 flex items-center justify-center w-6 h-12 rounded-r-full bg-white shadow-md hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-100 transition"
+          className="cursor-pointer absolute top-[84%] -left-4 z-50 flex items-center justify-center w-12 h-12 rounded-r-full bg-gray-800 shadow-md hover:bg-gray-800 dark:bg-white dark:hover:bg-white transition"
         >
-          <ChevronRight size={24} />
+          <ChevronRight size={24} className="text-white dark:text-gray-800" />
         </button>
       )}
 
       <div
-        className={`relative h-screen transition-all duration-300 bg-white dark:bg-gray-800 ${
+        className={`relative transition-all duration-300 bg-white dark:bg-gray-800 ${
           collapsed ? "w-0 overflow-hidden" : "w-64 p-4"
         }`}
       >
@@ -66,13 +66,16 @@ const Drawer = () => {
           ))}
         </ul>
 
-        <div className="relative h-screen transition-all duration-300 bg-white dark:bg-gray-800">
+        <div className="relative transition-all duration-300 bg-white dark:bg-gray-800">
           {!collapsed && (
             <button
               onClick={() => setCollapsed(true)}
-              className="cursor-pointer absolute top-1 -right-10 flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-md hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-100 transition"
+              className="cursor-pointer absolute top-1 -right-16 flex items-center justify-center w-12 h-12 rounded-full bg-gray-800 shadow-md hover:bg-gray-800 dark:bg-white dark:hover:bg-white text-gray-800 dark:text-gray-100 transition"
             >
-              <ChevronLeft size={24} />
+              <ChevronLeft
+                size={24}
+                className="text-white dark:text-gray-800"
+              />
             </button>
           )}
         </div>
