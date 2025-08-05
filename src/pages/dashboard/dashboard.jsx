@@ -1,5 +1,6 @@
 import { MapContainer, TileLayer, LayersControl } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import Stats from "../../components/Stats";
 
 const Dashboard = () => {
   return (
@@ -24,6 +25,10 @@ const Dashboard = () => {
           </LayersControl.BaseLayer>
         </LayersControl>
       </MapContainer>
+
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-[1000]">
+        <Stats />
+      </div>
     </>
   );
 };
