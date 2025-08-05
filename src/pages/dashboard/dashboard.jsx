@@ -1,13 +1,14 @@
 import { MapContainer, TileLayer, LayersControl } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import Stats from "../../components/Stats";
+import DataView from "../../components/DataView";
 
 const Dashboard = () => {
   return (
     <>
       <MapContainer
         center={[-6.2, 106.8]}
-        zoom={11}
+        zoom={12}
         style={{ height: "100vh", width: "100%" }}
       >
         <LayersControl position="topleft">
@@ -26,8 +27,13 @@ const Dashboard = () => {
         </LayersControl>
       </MapContainer>
 
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-[1000]">
-        <Stats />
+      <div className="absolute bottom-0 right-12 z-[1000] flex gap-4 items-end">
+        <div>
+          <Stats />
+        </div>
+        <div>
+          <DataView />
+        </div>
       </div>
     </>
   );
