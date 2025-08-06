@@ -1,4 +1,4 @@
-import { LayoutGrid, Wind, Factory, CarFront } from "lucide-react"; // Icon dari lucide-react
+import { LayoutGrid, Wind, Factory, CarFront } from "lucide-react";
 
 const DataView = () => {
   const items = [

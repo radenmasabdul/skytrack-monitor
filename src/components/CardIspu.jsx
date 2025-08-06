@@ -88,7 +88,7 @@ const CardIspu = () => {
   return (
     <div
       className={`bg-white dark:bg-neutral-900 rounded-xl shadow border border-gray-300 dark:border-neutral-700 overflow-hidden transition-all duration-500 ease-in-out ${
-        isExpanded ? "w-[1000px]" : "w-80"
+        isExpanded ? "w-[950px]" : "w-80"
       }`}
     >
       <div className="flex flex-col divide-y divide-gray-200 dark:divide-white/10 gap-3 p-4">
@@ -137,12 +137,12 @@ const CardIspu = () => {
           <div className="text-gray-900 dark:text-white text-sm py-2">
             <div className="flex flex-row justify-between gap-4">
               <div className="flex flex-col">
-                <div className="border border-gray-300 dark:border-gray-600 rounded-md px-4 py-2 bg-white dark:bg-neutral-900 shadow w-52">
-                  <label className="text-xs text-white mb-1 block">
+                <div className="border border-gray-300 dark:border-neutral-700 rounded-md px-4 py-2 bg-white dark:bg-neutral-800 shadow w-52">
+                  <label className="text-xs text-gray-800 dark:text-white mb-1 block">
                     PARAMETER
                   </label>
                   <select
-                    className="w-full bg-[#222B3A] text-white rounded px-2 py-1 border border-white/10 text-sm"
+                    className="w-full bg-white dark:bg-neutral-700 text-gray-800 dark:text-white rounded px-2 py-1 border border-gray-300 dark:border-white/10 text-sm"
                     value={parameterFilter}
                     onChange={(e) => setParameterFilter(e.target.value)}
                   >
@@ -157,11 +157,11 @@ const CardIspu = () => {
 
                 <div className="h-px bg-gray-600 dark:border-gray-300 my-4" />
                 <div className="border border-gray-300 dark:border-gray-600 rounded-md px-4 py-2 bg-white dark:bg-neutral-900 shadow w-full">
-                  <label className="text-xs text-white mb-1 block">
+                  <label className="text-xs text-gray-800 dark:text-white mb-1 block">
                     JENIS STASIUN
                   </label>
                   <select
-                    className="w-full bg-[#222B3A] text-white rounded px-2 py-1 border border-white/10 text-sm"
+                    className="w-full bg-white dark:bg-neutral-700 text-gray-800 dark:text-white rounded px-2 py-1 border border-gray-300 dark:border-white/10 text-sm"
                     value={jenisFilter}
                     onChange={(e) => setJenisFilter(e.target.value)}
                   >
@@ -178,18 +178,18 @@ const CardIspu = () => {
               <div className="border border-gray-300 dark:border-gray-600 rounded-md px-4 py-2 bg-white dark:bg-neutral-900 shadow w-full">
                 <div className="flex flex-row item-center justify-between">
                   <div className="relative w-full">
-                    <Search className="absolute left-2 top-2.5 w-4 h-4 text-white/50" />
+                    <Search className="absolute left-2 top-2.5 w-4 h-4 text-gray-400 dark:text-white/50" />
                     <input
                       type="text"
                       placeholder="Cari peringkat berdasarkan stasiun"
-                      className="pl-8 pr-3 py-2 w-full bg-[#222B3A] text-white rounded border border-white/10 text-sm"
+                      className="pl-8 pr-3 py-2 w-full bg-white dark:bg-neutral-700 text-gray-800 dark:text-white rounded border border-gray-300 dark:border-white/10 text-sm"
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}
                     />
                   </div>
                   <div className="flex items-center gap-2 ml-4">
                     <select
-                      className="bg-[#222B3A] text-white rounded px-2 py-1 border border-white/10 text-sm"
+                      className="bg-white dark:bg-neutral-700 text-gray-800 dark:text-white rounded px-2 py-1 border border-gray-300 dark:border-white/10 text-sm"
                       value={sortOrder}
                       onChange={(e) => setSortOrder(e.target.value)}
                     >
@@ -206,9 +206,9 @@ const CardIspu = () => {
                       : ""
                   }`}
                 >
-                  <table className="w-full text-sm text-white border-collapse">
+                  <table className="w-full text-sm text-gray-900 dark:text-white border-collapse">
                     <thead>
-                      <tr className="border-b border-white/10 text-left">
+                      <tr className="border-b border-gray-300 dark:border-white/10 text-left">
                         <th className="py-2">No</th>
                         <th>Parameter</th>
                         <th>Stasiun</th>
@@ -218,12 +218,15 @@ const CardIspu = () => {
                     </thead>
                     <tbody>
                       {filteredData.map((item, idx) => (
-                        <tr key={item.id} className="border-b border-white/10">
+                        <tr
+                          key={item.id}
+                          className="border-b border-gray-200 dark:border-white/10"
+                        >
                           <td className="py-2">{idx + 1}</td>
                           <td>{item.parameter}</td>
                           <td>{item.stasiun}</td>
                           <td>
-                            <span className="text-[11px] px-2 py-0.5 bg-white/10 text-white rounded border border-white/20">
+                            <span className="text-[11px] px-2 py-0.5 bg-black/5 dark:bg-white/10 text-gray-800 dark:text-white rounded border border-gray-300 dark:border-white/20">
                               {getShortCode(item.jenisStasiun)}
                             </span>
                           </td>
@@ -238,16 +241,6 @@ const CardIspu = () => {
                           </td>
                         </tr>
                       ))}
-                      {filteredData.length === 0 && (
-                        <tr>
-                          <td
-                            colSpan="5"
-                            className="text-center py-4 text-white/50"
-                          >
-                            Data tidak ditemukan.
-                          </td>
-                        </tr>
-                      )}
                     </tbody>
                   </table>
                 </div>

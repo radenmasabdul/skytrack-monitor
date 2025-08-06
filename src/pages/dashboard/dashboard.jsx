@@ -6,15 +6,15 @@ import CardIspu from "../../components/CardIspu";
 
 const Dashboard = () => {
   return (
-    <>
-      <div className="absolute top-56 left-[22%] z-[1000]">
+    <div className="relative w-full h-[calc(100vh-64px)]">
+      <div className="absolute top-3 left-20 z-[1000]">
         <CardIspu />
       </div>
 
       <MapContainer
         center={[-6.2, 106.8]}
         zoom={10}
-        style={{ height: "100vh", width: "100%" }}
+        style={{ height: "100%", width: "100%" }}
       >
         <LayersControl position="topleft">
           <LayersControl.BaseLayer checked name="Default Map">
@@ -32,7 +32,7 @@ const Dashboard = () => {
         </LayersControl>
       </MapContainer>
 
-      <div className="absolute bottom-0 right-12 z-[1000] flex gap-4 items-end">
+      <div className="absolute bottom-5 right-12 z-[1000] flex gap-4 items-end">
         <div>
           <Stats />
         </div>
@@ -40,7 +40,7 @@ const Dashboard = () => {
           <DataView />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
