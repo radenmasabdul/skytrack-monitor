@@ -2,13 +2,18 @@ import { MapContainer, TileLayer, LayersControl } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import Stats from "../../components/Stats";
 import DataView from "../../components/DataView";
+import CardIspu from "../../components/CardIspu";
 
 const Dashboard = () => {
   return (
     <>
+      <div className="absolute top-56 left-[22%] z-[1000]">
+        <CardIspu />
+      </div>
+
       <MapContainer
         center={[-6.2, 106.8]}
-        zoom={12}
+        zoom={10}
         style={{ height: "100vh", width: "100%" }}
       >
         <LayersControl position="topleft">
