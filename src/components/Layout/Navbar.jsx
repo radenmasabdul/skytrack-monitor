@@ -56,25 +56,29 @@ const Navbar = () => {
 
   return (
     <div className="navbar bg-white shadow-sm px-4 dark:bg-gray-800">
-      {/* kiri */}
       <div className="navbar-start gap-4">
         <button
           className={menuClasses("udara")}
-          onClick={() => setActiveMenu("udara")}
+          onClick={() => {
+            setActiveMenu("udara");
+            navigate("/dashboard");
+          }}
         >
           <Wind size={18} />
           Inventarisasi Udara
         </button>
         <button
           className={menuClasses("emisi")}
-          onClick={() => setActiveMenu("emisi")}
+          onClick={() => {
+            setActiveMenu("emisi");
+            navigate("/emisi");
+          }}
         >
           <Cloud size={18} />
           Inventarisasi Emisi
         </button>
       </div>
 
-      {/* tengah */}
       <div className="navbar-center hidden lg:flex">
         <button className="flex items-center gap-2 text-lg font-semibold text-black dark:text-gray-100">
           <Leaf size={20} />
@@ -82,7 +86,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* kanan */}
       <div className="navbar-end flex items-center gap-4">
         <input
           type="text"
@@ -115,7 +118,6 @@ const Navbar = () => {
           <span className="badge badge-xs badge-error absolute top-0 right-0"></span>
         </button>
 
-        {/* dropdown */}
         <div className="dropdown dropdown-end">
           <div
             tabIndex={0}
