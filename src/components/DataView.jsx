@@ -1,6 +1,6 @@
 import { LayoutGrid, Wind, Factory, CarFront } from "lucide-react";
 
-const DataView = () => {
+const DataView = ({ onSelect, selected }) => {
   const items = [
     { label: "Grid", icon: <LayoutGrid size={20} /> },
     { label: "Udara", icon: <Wind size={20} /> },
@@ -14,14 +14,24 @@ const DataView = () => {
         Data View
       </h2>
       <div className="flex items-center gap-6">
-        {items.map((item) => (
-          <div key={item.label} className="flex flex-col items-center gap-1">
-            <div className="text-gray-700 dark:text-gray-200">{item.icon}</div>
-            <span className="text-xs text-gray-600 dark:text-gray-300">
-              {item.label}
-            </span>
-          </div>
-        ))}
+        {items.map((item) => {
+          const isActive = selected === item.label;
+
+          return (
+            <button
+              key={item.label}
+              onClick={() => onSelect(item.label)}
+              className={`flex flex-col items-center gap-1 focus:outline-none cursor-pointer transition-all ${
+                isActive
+                  ? "text-blue-600 dark:text-blue-400 font-semibold"
+                  : "text-gray-700 dark:text-gray-200"
+              }`}
+            >
+              <div>{item.icon}</div>
+              <span className="text-xs">{item.label}</span>
+            </button>
+          );
+        })}
       </div>
     </div>
   );
