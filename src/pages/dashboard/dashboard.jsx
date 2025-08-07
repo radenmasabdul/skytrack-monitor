@@ -6,6 +6,7 @@ import {
   Popup,
   CircleMarker,
   Marker,
+  Polyline,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -14,6 +15,7 @@ import DataView from "../../components/DataView";
 import CardIspu from "../../components/CardIspu";
 import airIndex from "../../hooks/airIndex.json";
 import polutionIndex from "../../hooks/polutionIndex.json";
+import trafficIndex from "../../hooks/trafficIndex.json";
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -55,6 +57,13 @@ const Dashboard = () => {
     iconAnchor: [15, 30],
     popupAnchor: [0, -30],
   });
+
+  const trafficColors = {
+    green: "green",
+    yellow: "yellow",
+    orange: "orange",
+    red: "red",
+  };
 
   return (
     <div className="relative w-full h-[calc(100vh-64px)]">
@@ -137,6 +146,36 @@ const Dashboard = () => {
               </Popup>
             </Marker>
           ))}
+
+        {selectedView === "Kendaraan" &&
+          trafficIndex.regions.map((region) =>
+            region.roads.map((road, i) => {
+              const positions = [
+                [road.coordinates.start.lat, road.coordinates.start.lng],
+                [road.coordinates.end.lat, road.coordinates.end.lng],
+              ];
+
+              const color = trafficColors[road.status] || "gray";
+
+              return (
+                <Polyline
+                  key={`${region.id}-${i}`}
+                  positions={positions}
+                  pathOptions={{ color, weight: 6 }}
+                >
+                  <Popup>
+                    <strong>{road.road_name}</strong> <br />
+                    {road.segment} <br />
+                    Status: <strong>{road.status}</strong>
+                    <br />
+                    Kecepatan: {road.speed_kmh} km/h
+                    <br />
+                    Estimasi: {road.travel_time_minutes} menit
+                  </Popup>
+                </Polyline>
+              );
+            })
+          )}
       </MapContainer>
 
       <div className="absolute bottom-5 right-12 z-[1000] flex gap-4 items-end">
