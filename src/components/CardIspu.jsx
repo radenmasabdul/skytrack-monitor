@@ -217,30 +217,41 @@ const CardIspu = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {filteredData.map((item, idx) => (
-                        <tr
-                          key={item.id}
-                          className="border-b border-gray-200 dark:border-white/10"
-                        >
-                          <td className="py-2">{idx + 1}</td>
-                          <td>{item.parameter}</td>
-                          <td>{item.stasiun}</td>
-                          <td>
-                            <span className="text-[11px] px-2 py-0.5 bg-black/5 dark:bg-white/10 text-gray-800 dark:text-white rounded border border-gray-300 dark:border-white/20">
-                              {getShortCode(item.jenisStasiun)}
-                            </span>
-                          </td>
-                          <td>
-                            <span
-                              className={`px-3 py-1 rounded-full text-white font-bold ${getColorByValue(
-                                item.value
-                              )}`}
-                            >
-                              {item.value}
-                            </span>
+                      {filteredData.length === 0 ? (
+                        <tr>
+                          <td
+                            colSpan="5"
+                            className="text-center py-4 text-gray-800 dark:text-white"
+                          >
+                            Data Tidak Ditemukan
                           </td>
                         </tr>
-                      ))}
+                      ) : (
+                        filteredData.map((item, idx) => (
+                          <tr
+                            key={item.id}
+                            className="border-b border-gray-200 dark:border-white/10"
+                          >
+                            <td className="py-2">{idx + 1}</td>
+                            <td>{item.parameter}</td>
+                            <td>{item.stasiun}</td>
+                            <td>
+                              <span className="text-[11px] px-2 py-0.5 bg-black/5 dark:bg-white/10 text-gray-800 dark:text-white rounded border border-gray-300 dark:border-white/20">
+                                {getShortCode(item.jenisStasiun)}
+                              </span>
+                            </td>
+                            <td>
+                              <span
+                                className={`px-3 py-1 rounded-full text-white font-bold ${getColorByValue(
+                                  item.value
+                                )}`}
+                              >
+                                {item.value}
+                              </span>
+                            </td>
+                          </tr>
+                        ))
+                      )}
                     </tbody>
                   </table>
                 </div>
