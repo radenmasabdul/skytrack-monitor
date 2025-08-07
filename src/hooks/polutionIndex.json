@@ -1,0 +1,416 @@
+{
+  "metadata": {
+    "title": "Data Pabrik Penyumbang Polusi Udara DKI Jakarta",
+    "region": "Provinsi DKI Jakarta",
+    "last_updated": "2025-01-01",
+    "data_source": "Dinas Lingkungan Hidup DKI Jakarta",
+    "total_factories": 150,
+    "methodology": "Pengukuran emisi berdasarkan pemantauan rutin dan laporan PROPER"
+  },
+  "factories": [
+    {
+      "id": "FAC001",
+      "name": "PT Industrial Jakarta Utama",
+      "industry_type": "Tekstil dan Garmen",
+      "location": {
+        "address": "Jl. Industri Raya No. 45, Pulogadung",
+        "kelurahan": "Pulogadung",
+        "kecamatan": "Pulogadung", 
+        "kota_administrasi": "Jakarta Timur",
+        "coordinates": {
+          "latitude": -6.1869,
+          "longitude": 106.9095
+        }
+      },
+      "operational_status": "Aktif",
+      "establishment_year": 1995,
+      "employee_count": 850,
+      "operational_hours": "24 jam",
+      "pollution_data": {
+        "air_quality_index": 145,
+        "pollution_level": "Tidak Sehat",
+        "emissions": {
+          "pm25": {
+            "value": 75,
+            "unit": "µg/m³",
+            "standard_limit": 35,
+            "status": "Melebihi Batas"
+          },
+          "pm10": {
+            "value": 120,
+            "unit": "µg/m³", 
+            "standard_limit": 50,
+            "status": "Melebihi Batas"
+          },
+          "so2": {
+            "value": 85,
+            "unit": "µg/m³",
+            "standard_limit": 125,
+            "status": "Normal"
+          },
+          "no2": {
+            "value": 95,
+            "unit": "µg/m³",
+            "standard_limit": 40,
+            "status": "Melebihi Batas"
+          },
+          "co": {
+            "value": 12,
+            "unit": "mg/m³",
+            "standard_limit": 10,
+            "status": "Melebihi Batas"
+          },
+          "o3": {
+            "value": 180,
+            "unit": "µg/m³",
+            "standard_limit": 120,
+            "status": "Melebihi Batas"
+          }
+        },
+        "pollution_contribution": {
+          "percentage_to_regional_pollution": 8.5,
+          "daily_emission_tons": 12.3,
+          "annual_emission_tons": 4489.5
+        }
+      },
+      "environmental_compliance": {
+        "proper_rating": "Merah",
+        "environmental_permit": {
+          "number": "EP-DKI-2023-001",
+          "valid_until": "2026-12-31",
+          "status": "Aktif"
+        },
+        "violations": [
+          {
+            "date": "2024-03-15",
+            "type": "Pelanggaran Baku Mutu Emisi",
+            "fine_amount": 500000000,
+            "status": "Belum Diselesaikan"
+          }
+        ],
+        "monitoring_frequency": "Bulanan"
+      },
+      "pollution_control": {
+        "equipment": [
+          {
+            "type": "Scrubber",
+            "installation_year": 2020,
+            "efficiency": 75,
+            "maintenance_status": "Baik"
+          },
+          {
+            "type": "Baghouse Filter",
+            "installation_year": 2018,
+            "efficiency": 85,
+            "maintenance_status": "Perlu Perbaikan"
+          }
+        ],
+        "waste_treatment": {
+          "air_treatment": "Scrubber + Filter",
+          "water_treatment": "IPAL Biologis",
+          "solid_waste_management": "TPS B3"
+        }
+      },
+      "contact_info": {
+        "phone": "+62-21-12345678",
+        "email": "environmental@industrialjakarta.co.id",
+        "environmental_officer": "Budi Santoso"
+      }
+    },
+    {
+      "id": "FAC002", 
+      "name": "CV Kimia Sejahtera",
+      "industry_type": "Kimia dan Farmasi",
+      "location": {
+        "address": "Jl. Raya Bekasi Km 18",
+        "kelurahan": "Cakung",
+        "kecamatan": "Cakung",
+        "kota_administrasi": "Jakarta Timur", 
+        "coordinates": {
+          "latitude": -6.1751,
+          "longitude": 106.9650
+        }
+      },
+      "operational_status": "Aktif",
+      "establishment_year": 2001,
+      "employee_count": 320,
+      "operational_hours": "16 jam",
+      "pollution_data": {
+        "air_quality_index": 168,
+        "pollution_level": "Tidak Sehat",
+        "emissions": {
+          "pm25": {
+            "value": 89,
+            "unit": "µg/m³",
+            "standard_limit": 35,
+            "status": "Melebihi Batas"
+          },
+          "pm10": {
+            "value": 145,
+            "unit": "µg/m³",
+            "standard_limit": 50, 
+            "status": "Melebihi Batas"
+          },
+          "so2": {
+            "value": 156,
+            "unit": "µg/m³",
+            "standard_limit": 125,
+            "status": "Melebihi Batas"
+          },
+          "no2": {
+            "value": 125,
+            "unit": "µg/m³",
+            "standard_limit": 40,
+            "status": "Melebihi Batas"
+          },
+          "co": {
+            "value": 18,
+            "unit": "mg/m³",
+            "standard_limit": 10,
+            "status": "Melebihi Batas"
+          },
+          "o3": {
+            "value": 210,
+            "unit": "µg/m³",
+            "standard_limit": 120,
+            "status": "Melebihi Batas"
+          }
+        },
+        "pollution_contribution": {
+          "percentage_to_regional_pollution": 12.8,
+          "daily_emission_tons": 18.7,
+          "annual_emission_tons": 6825.5
+        }
+      },
+      "environmental_compliance": {
+        "proper_rating": "Merah",
+        "environmental_permit": {
+          "number": "EP-DKI-2022-045",
+          "valid_until": "2025-06-30",
+          "status": "Aktif"
+        },
+        "violations": [
+          {
+            "date": "2024-01-20",
+            "type": "Pelanggaran Baku Mutu Emisi Gas",
+            "fine_amount": 750000000,
+            "status": "Dalam Proses Pembayaran"
+          },
+          {
+            "date": "2024-06-10", 
+            "type": "Tidak Melaporkan Pemantauan Emisi",
+            "fine_amount": 250000000,
+            "status": "Lunas"
+          }
+        ],
+        "monitoring_frequency": "Mingguan"
+      },
+      "pollution_control": {
+        "equipment": [
+          {
+            "type": "Thermal Oxidizer",
+            "installation_year": 2019,
+            "efficiency": 92,
+            "maintenance_status": "Baik"
+          },
+          {
+            "type": "Activated Carbon Filter",
+            "installation_year": 2021,
+            "efficiency": 78,
+            "maintenance_status": "Baik"
+          }
+        ],
+        "waste_treatment": {
+          "air_treatment": "Thermal Oxidizer + Carbon Filter",
+          "water_treatment": "IPAL Kimia-Fisika",
+          "solid_waste_management": "Incinerator B3"
+        }
+      },
+      "contact_info": {
+        "phone": "+62-21-87654321",
+        "email": "hse@kimiasejahtera.co.id", 
+        "environmental_officer": "Siti Rahayu"
+      }
+    },
+    {
+      "id": "FAC003",
+      "name": "PT Metal Works Indonesia",
+      "industry_type": "Logam dan Baja",
+      "location": {
+        "address": "Kawasan Industri Marunda Blok C-15",
+        "kelurahan": "Marunda", 
+        "kecamatan": "Cilincing",
+        "kota_administrasi": "Jakarta Utara",
+        "coordinates": {
+          "latitude": -6.1089,
+          "longitude": 106.9328
+        }
+      },
+      "operational_status": "Aktif",
+      "establishment_year": 1988,
+      "employee_count": 1200,
+      "operational_hours": "24 jam",
+      "pollution_data": {
+        "air_quality_index": 189,
+        "pollution_level": "Sangat Tidak Sehat",
+        "emissions": {
+          "pm25": {
+            "value": 112,
+            "unit": "µg/m³",
+            "standard_limit": 35,
+            "status": "Melebihi Batas"
+          },
+          "pm10": {
+            "value": 178,
+            "unit": "µg/m³",
+            "standard_limit": 50,
+            "status": "Melebihi Batas"
+          },
+          "so2": {
+            "value": 198,
+            "unit": "µg/m³",
+            "standard_limit": 125,
+            "status": "Melebihi Batas"
+          },
+          "no2": {
+            "value": 156,
+            "unit": "µg/m³",
+            "standard_limit": 40,
+            "status": "Melebihi Batas"
+          },
+          "co": {
+            "value": 24,
+            "unit": "mg/m³",
+            "standard_limit": 10,
+            "status": "Melebihi Batas"
+          },
+          "o3": {
+            "value": 245,
+            "unit": "µg/m³",
+            "standard_limit": 120,
+            "status": "Melebihi Batas"
+          }
+        },
+        "pollution_contribution": {
+          "percentage_to_regional_pollution": 15.2,
+          "daily_emission_tons": 28.4,
+          "annual_emission_tons": 10366
+        }
+      },
+      "environmental_compliance": {
+        "proper_rating": "Hitam",
+        "environmental_permit": {
+          "number": "EP-DKI-2021-078",
+          "valid_until": "2024-12-31",
+          "status": "Kadaluarsa - Dalam Perpanjangan"
+        },
+        "violations": [
+          {
+            "date": "2024-02-28",
+            "type": "Pelanggaran Baku Mutu Emisi Partikel",
+            "fine_amount": 1000000000,
+            "status": "Belum Diselesaikan"
+          },
+          {
+            "date": "2024-05-15",
+            "type": "Operasional Tanpa Izin Lingkungan",
+            "fine_amount": 2000000000,
+            "status": "Dalam Proses Hukum"
+          }
+        ],
+        "monitoring_frequency": "Harian"
+      },
+      "pollution_control": {
+        "equipment": [
+          {
+            "type": "Electrostatic Precipitator",
+            "installation_year": 2015,
+            "efficiency": 82,
+            "maintenance_status": "Rusak"
+          },
+          {
+            "type": "Wet Scrubber",
+            "installation_year": 2017,
+            "efficiency": 68,
+            "maintenance_status": "Perlu Penggantian"
+          }
+        ],
+        "waste_treatment": {
+          "air_treatment": "ESP + Wet Scrubber (Tidak Optimal)",
+          "water_treatment": "IPAL Fisika-Kimia",
+          "solid_waste_management": "Landfill B3"
+        }
+      },
+      "contact_info": {
+        "phone": "+62-21-55667788",
+        "email": "env@metalworks.co.id",
+        "environmental_officer": "Ahmad Wijaya"
+      }
+    }
+  ],
+  "summary_statistics": {
+    "total_daily_emissions_tons": 59.4,
+    "total_annual_emissions_tons": 21681,
+    "average_aqi": 167.3,
+    "pollution_distribution": {
+      "jakarta_timur": {
+        "factory_count": 75,
+        "pollution_percentage": 45.2
+      },
+      "jakarta_utara": {
+        "factory_count": 35,
+        "pollution_percentage": 28.8
+      },
+      "jakarta_barat": {
+        "factory_count": 25,
+        "pollution_percentage": 18.5
+      },
+      "jakarta_selatan": {
+        "factory_count": 10,
+        "pollution_percentage": 5.2
+      },
+      "jakarta_pusat": {
+        "factory_count": 5,
+        "pollution_percentage": 2.3
+      }
+    },
+    "industry_breakdown": {
+      "kimia_farmasi": {
+        "factory_count": 45,
+        "pollution_percentage": 32.1
+      },
+      "logam_baja": {
+        "factory_count": 38,
+        "pollution_percentage": 28.7
+      },
+      "tekstil_garmen": {
+        "factory_count": 32,
+        "pollution_percentage": 21.4
+      },
+      "makanan_minuman": {
+        "factory_count": 20,
+        "pollution_percentage": 10.8
+      },
+      "lainnya": {
+        "factory_count": 15,
+        "pollution_percentage": 7.0
+      }
+    }
+  },
+  "regulatory_framework": {
+    "applicable_regulations": [
+      "Perda DKI Jakarta No. 2 Tahun 2005 tentang Pengendalian Pencemaran Udara",
+      "PP No. 22 Tahun 2021 tentang Penyelenggaraan Perlindungan dan Pengelolaan Lingkungan Hidup",
+      "Permen LHK No. 7 Tahun 2014 tentang Kerugian Lingkungan Hidup Akibat Pencemaran dan/atau Kerusakan Lingkungan Hidup"
+    ],
+    "emission_standards": {
+      "pm25_limit": 35,
+      "pm10_limit": 50,
+      "so2_limit": 125,
+      "no2_limit": 40,
+      "co_limit": 10,
+      "o3_limit": 120,
+      "unit": "µg/m³ (kecuali CO dalam mg/m³)"
+    }
+  }
+}

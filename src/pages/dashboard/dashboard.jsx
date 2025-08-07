@@ -3,10 +3,9 @@ import {
   MapContainer,
   TileLayer,
   LayersControl,
-  Marker,
   Popup,
   CircleMarker,
-  LayerGroup,
+  Marker,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -14,6 +13,7 @@ import Stats from "../../components/Stats";
 import DataView from "../../components/DataView";
 import CardIspu from "../../components/CardIspu";
 import airIndex from "../../hooks/airIndex.json";
+import polutionIndex from "../../hooks/polutionIndex.json";
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -23,7 +23,6 @@ L.Icon.Default.mergeOptions({
 
 const Dashboard = () => {
   const [selectedView, setSelectedView] = useState(null);
-
   const [blink, setBlink] = useState(true);
 
   useEffect(() => {
@@ -36,19 +35,26 @@ const Dashboard = () => {
   const getColorByValue = (value) => {
     switch (true) {
       case value <= 50:
-        return "#16a34a"; // bg-green-600
+        return "#16a34a";
       case value <= 100:
-        return "#facc15"; // bg-yellow-400
+        return "#facc15";
       case value <= 150:
-        return "#f97316"; // bg-orange-500
+        return "#f97316";
       case value <= 200:
-        return "#dc2626"; // bg-red-600
+        return "#dc2626";
       case value <= 300:
-        return "#9333ea"; // bg-purple-600
+        return "#9333ea";
       default:
-        return "#881337"; // bg-rose-900
+        return "#881337";
     }
   };
+
+  const factoryIcon = new L.Icon({
+    iconUrl: "https://cdn-icons-png.flaticon.com/512/3256/3256216.png",
+    iconSize: [30, 30],
+    iconAnchor: [15, 30],
+    popupAnchor: [0, -30],
+  });
 
   return (
     <div className="relative w-full h-[calc(100vh-64px)]">
@@ -87,7 +93,6 @@ const Dashboard = () => {
                   color: "white",
                   weight: 1,
                   fillColor: getColorByValue(district.aqi_us),
-                  // fillOpacity: 0.8,
                   fillOpacity: blink ? 0.8 : 0.3,
                 }}
               >
@@ -108,6 +113,30 @@ const Dashboard = () => {
               </CircleMarker>
             ))
           )}
+
+        {selectedView === "Pabrik" &&
+          polutionIndex.factories.map((factory) => (
+            <Marker
+              key={factory.id}
+              position={[
+                factory.location.coordinates.latitude,
+                factory.location.coordinates.longitude,
+              ]}
+              icon={factoryIcon}
+            >
+              <Popup>
+                <strong>{factory.name}</strong>
+                <br />
+                AQI: {factory.pollution_data.air_quality_index} (
+                {factory.pollution_data.pollution_level})
+                <br />
+                Lokasi: {factory.location.kecamatan},{" "}
+                {factory.location.kota_administrasi}
+                <br />
+                Industri: {factory.industry_type}
+              </Popup>
+            </Marker>
+          ))}
       </MapContainer>
 
       <div className="absolute bottom-5 right-12 z-[1000] flex gap-4 items-end">
