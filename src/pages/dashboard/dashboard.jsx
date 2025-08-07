@@ -24,7 +24,7 @@ L.Icon.Default.mergeOptions({
 });
 
 const Dashboard = () => {
-  const [selectedView, setSelectedView] = useState(null);
+  const [selectedView, setSelectedView] = useState("Udara");
   const [blink, setBlink] = useState(true);
 
   useEffect(() => {

@@ -1,8 +1,7 @@
-import { LayoutGrid, Wind, Factory, CarFront } from "lucide-react";
+import { Wind, Factory, CarFront } from "lucide-react";
 
 const DataView = ({ onSelect, selected }) => {
   const items = [
-    { label: "Grid", icon: <LayoutGrid size={20} /> },
     { label: "Udara", icon: <Wind size={20} /> },
     { label: "Pabrik", icon: <Factory size={20} /> },
     { label: "Kendaraan", icon: <CarFront size={20} /> },
@@ -28,7 +27,6 @@ const DataView = ({ onSelect, selected }) => {
               }`}
             >
               <div>{item.icon}</div>
-              <span className="text-xs">{item.label}</span>
             </button>
           );
         })}
