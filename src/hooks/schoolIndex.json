@@ -1,0 +1,503 @@
+{
+  "metadata": {
+    "region": "DKI Jakarta",
+    "judul": "Estimasi Ranking Emisi Sekolah dari Terendah ke Tertinggi",
+    "tahun_referensi": "2024",
+    "metodologi": "Estimasi berdasarkan konsumsi energi, luas bangunan, jumlah siswa, dan teknologi yang digunakan",
+    "satuan_emisi": "Ton CO2 equivalent per tahun",
+    "koordinat_referensi": "WGS84 Decimal Degrees",
+    "disclaimer": "Data estimasi karena monitoring emisi spesifik per sekolah tidak tersedia publik",
+    "sumber_metodologi": "IPCC Guidelines, Kementerian ESDM, dan BPS",
+    "last_updated": "2025-08-08"
+  },
+  "bounding_box_jakarta": {
+    "north": -6.0901,
+    "south": -6.3744,
+    "east": 107.0761,
+    "west": 106.6794,
+    "center": {
+      "latitude": -6.2146,
+      "longitude": 106.8451
+    }
+  },
+  "metodologi_perhitungan": {
+    "faktor_penilaian": [
+      "Konsumsi listrik (kWh/tahun)",
+      "Luas bangunan sekolah (m²)",
+      "Jumlah siswa dan guru",
+      "Jenis teknologi yang digunakan",
+      "Sistem transportasi sekolah",
+      "Pengelolaan limbah",
+      "Efisiensi bangunan"
+    ],
+    "formula_dasar": "Emisi CO2 = (Konsumsi Energi × Faktor Emisi Listrik) + (Transportasi × Faktor Emisi Transport) + (Limbah × Faktor Emisi Waste)",
+    "faktor_emisi_listrik_jakarta": "0.84 kg CO2/kWh (Grid PLN Jawa-Bali)",
+    "kategori_emisi": {
+      "sangat_rendah": "0-5 ton CO2/tahun",
+      "rendah": "5-15 ton CO2/tahun", 
+      "sedang": "15-30 ton CO2/tahun",
+      "tinggi": "30-60 ton CO2/tahun",
+      "sangat_tinggi": ">60 ton CO2/tahun"
+    }
+  },
+  "ranking_emisi_terendah_ke_tertinggi": {
+    "kategori_sangat_rendah": [
+      {
+        "peringkat": 1,
+        "nama": "SDN Duren Sawit 14",
+        "wilayah": "Jakarta Timur",
+        "koordinat": {
+          "latitude": -6.2256,
+          "longitude": 106.9342
+        },
+        "estimasi_emisi": "2.5 ton CO2/tahun",
+        "kategori": "Sangat Rendah",
+        "alasan_rendah": [
+          "Program Net Zero Carbon pioneer",
+          "Panel surya 80% kebutuhan listrik", 
+          "LED lighting system",
+          "Natural ventilation",
+          "Rainwater harvesting"
+        ],
+        "jumlah_siswa": "350 siswa",
+        "luas_bangunan": "1,200 m²",
+        "status": "Sekolah Dasar Negeri",
+        "alamat": "Jl. Duren Sawit Raya, Jakarta Timur"
+      },
+      {
+        "peringkat": 2, 
+        "nama": "SDN Grogol Selatan 09",
+        "wilayah": "Jakarta Selatan",
+        "koordinat": {
+          "latitude": -6.2846,
+          "longitude": 106.7889
+        },
+        "estimasi_emisi": "3.2 ton CO2/tahun",
+        "kategori": "Sangat Rendah",
+        "alasan_rendah": [
+          "Program Net Zero Carbon pioneer",
+          "Smart energy management",
+          "Green building materials",
+          "Vertical garden system",
+          "Waste composting facility"
+        ],
+        "jumlah_siswa": "420 siswa",
+        "luas_bangunan": "1,350 m²",
+        "status": "Sekolah Dasar Negeri",
+        "alamat": "Jl. Grogol Selatan, Jakarta Selatan"
+      },
+      {
+        "peringkat": 3,
+        "nama": "SDN Ragunan 08 Pagi",
+        "wilayah": "Jakarta Selatan",
+        "koordinat": {
+          "latitude": -6.2615,
+          "longitude": 106.8206
+        }, 
+        "estimasi_emisi": "3.8 ton CO2/tahun",
+        "kategori": "Sangat Rendah",
+        "alasan_rendah": [
+          "Program Net Zero Carbon cluster",
+          "Shared renewable energy",
+          "Integrated waste management",
+          "Community garden program",
+          "Green transportation access"
+        ],
+        "jumlah_siswa": "380 siswa",
+        "luas_bangunan": "1,150 m²",
+        "status": "Sekolah Dasar Negeri",
+        "alamat": "Jl. Ragunan Raya, Jakarta Selatan"
+      },
+      {
+        "peringkat": 4,
+        "nama": "SMAN 96 Jakarta",
+        "wilayah": "Jakarta Barat",
+        "koordinat": {
+          "latitude": -6.1584,
+          "longitude": 106.7456
+        },
+        "estimasi_emisi": "4.5 ton CO2/tahun", 
+        "kategori": "Sangat Rendah",
+        "alasan_rendah": [
+          "Program Net Zero Carbon pioneer SMA",
+          "Large-scale solar installation", 
+          "Energy storage system",
+          "Smart building automation",
+          "EV charging station"
+        ],
+        "jumlah_siswa": "720 siswa",
+        "luas_bangunan": "2,800 m²",
+        "status": "Sekolah Menengah Atas Negeri",
+        "alamat": "Jl. Cengkareng Timur, Jakarta Barat"
+      }
+    ],
+    "kategori_rendah": [
+      {
+        "peringkat": 5,
+        "nama": "SMA Labschool Kebayoran",
+        "wilayah": "Jakarta Selatan",
+        "koordinat": {
+          "latitude": -6.2410,
+          "longitude": 106.7921
+        },
+        "estimasi_emisi": "8.5 ton CO2/tahun",
+        "kategori": "Rendah",
+        "alasan_rendah": [
+          "Green building certified",
+          "Energy efficient design",
+          "Solar panel installation 40%",
+          "LED lighting throughout",
+          "Water recycling system"
+        ],
+        "jumlah_siswa": "650 siswa",
+        "luas_bangunan": "2,500 m²",
+        "status": "Sekolah Menengah Atas Swasta",
+        "alamat": "Jl. Kebayoran Baru, Jakarta Selatan"
+      },
+      {
+        "peringkat": 6,
+        "nama": "SMAS BPK Penabur",
+        "wilayah": "Jakarta Barat",
+        "koordinat": {
+          "latitude": -6.1456,
+          "longitude": 106.7834
+        },
+        "estimasi_emisi": "12.3 ton CO2/tahun",
+        "kategori": "Rendah", 
+        "alasan_rendah": [
+          "Modern energy efficient building",
+          "Partial solar panel system",
+          "Smart classroom technology",
+          "Waste sorting program",
+          "Public transport accessible"
+        ],
+        "jumlah_siswa": "850 siswa",
+        "luas_bangunan": "3,200 m²",
+        "status": "Sekolah Menengah Atas Swasta",
+        "alamat": "Jl. Taman Pluit Permai, Jakarta Barat"
+      },
+      {
+        "peringkat": 7,
+        "nama": "SMP Negeri 1 Jakarta",
+        "wilayah": "Jakarta Pusat",
+        "koordinat": {
+          "latitude": -6.1742,
+          "longitude": 106.8272
+        },
+        "estimasi_emisi": "14.2 ton CO2/tahun",
+        "kategori": "Rendah",
+        "alasan": [
+          "Renovasi bangunan recent",
+          "LED lighting upgrade",
+          "Natural ventilation design", 
+          "Lokasi akses transportasi publik baik",
+          "Program hemat energi"
+        ],
+        "jumlah_siswa": "900 siswa",
+        "luas_bangunan": "2,800 m²",
+        "status": "Sekolah Menengah Pertama Negeri",
+        "alamat": "Jl. Budi Kemuliaan I, Jakarta Pusat"
+      }
+    ],
+    "kategori_sedang": [
+      {
+        "peringkat": 8,
+        "nama": "SMA Negeri 77 Jakarta",
+        "wilayah": "Jakarta Pusat",
+        "koordinat": {
+          "latitude": -6.1856,
+          "longitude": 106.8654
+        },
+        "estimasi_emisi": "18.7 ton CO2/tahun",
+        "kategori": "Sedang",
+        "karakteristik": [
+          "Bangunan standar tanpa teknologi khusus",
+          "Pencahayaan konvensional sebagian",
+          "AC untuk beberapa ruang",
+          "Laboratorium lengkap",
+          "Transportasi campuran"
+        ],
+        "jumlah_siswa": "920 siswa",
+        "luas_bangunan": "3,500 m²",
+        "status": "Sekolah Menengah Atas Negeri",
+        "alamat": "Jl. Cempaka Putih Tengah 17, Jakarta Pusat"
+      },
+      {
+        "peringkat": 9,
+        "nama": "SMK Negeri 1 Jakarta",
+        "wilayah": "Jakarta Pusat",
+        "koordinat": {
+          "latitude": -6.1654,
+          "longitude": 106.8134
+        }, 
+        "estimasi_emisi": "25.4 ton CO2/tahun",
+        "kategori": "Sedang",
+        "karakteristik": [
+          "Workshop dan lab teknik konsumsi tinggi",
+          "Mesin-mesin praktik industri",
+          "AC untuk workshop",
+          "Sistem pencahayaan campuran",
+          "Kendaraan praktik"
+        ],
+        "jumlah_siswa": "1,200 siswa",
+        "luas_bangunan": "4,200 m²", 
+        "status": "Sekolah Menengah Kejuruan Negeri",
+        "alamat": "Jl. Budi Utomo, Jakarta Pusat"
+      },
+      {
+        "peringkat": 10,
+        "nama": "SMA Negeri 2 Jakarta",
+        "wilayah": "Jakarta Barat",
+        "koordinat": {
+          "latitude": -6.1375,
+          "longitude": 106.8045
+        },
+        "estimasi_emisi": "28.9 ton CO2/tahun",
+        "kategori": "Sedang",
+        "karakteristik": [
+          "Bangunan lama dengan retrofit minimal",
+          "Sistem AC sentral beberapa blok",
+          "Laboratorium sains lengkap",
+          "Konsumsi listrik standar tinggi",
+          "Akses transportasi terbatas"
+        ],
+        "jumlah_siswa": "1,100 siswa",
+        "luas_bangunan": "4,500 m²",
+        "status": "Sekolah Menengah Atas Negeri",
+        "alamat": "Jl. Gajah Mada 175, Jakarta Barat"
+      }
+    ],
+    "kategori_tinggi": [
+      {
+        "peringkat": 11,
+        "nama": "SMK Negeri Teknologi Jakarta",
+        "wilayah": "Jakarta Timur",
+        "koordinat": {
+          "latitude": -6.2145,
+          "longitude": 106.9234
+        },
+        "estimasi_emisi": "35.6 ton CO2/tahun",
+        "kategori": "Tinggi",
+        "faktor_emisi_tinggi": [
+          "Workshop teknik dengan mesin berat",
+          "Laboratorium robotika dan otomasi", 
+          "AC sentral untuk semua ruang",
+          "Server dan IT infrastructure besar",
+          "Kendaraan praktik dan bus sekolah"
+        ],
+        "jumlah_siswa": "1,500 siswa",
+        "luas_bangunan": "5,500 m²",
+        "status": "Sekolah Menengah Kejuruan Negeri",
+        "alamat": "Jl. Raya Bogor KM 21, Jakarta Timur"
+      },
+      {
+        "peringkat": 12,
+        "nama": "SMA Jakarta International School",
+        "wilayah": "Jakarta Selatan",
+        "koordinat": {
+          "latitude": -6.2634,
+          "longitude": 106.8201
+        }, 
+        "estimasi_emisi": "42.3 ton CO2/tahun", 
+        "kategori": "Tinggi",
+        "faktor_emisi_tinggi": [
+          "Full AC semua ruangan",
+          "Fasilitas olahraga indoor lengkap",
+          "Multiple lab sains dan komputer",
+          "Swimming pool dengan heating",
+          "Bus sekolah untuk semua siswa"
+        ],
+        "jumlah_siswa": "1,200 siswa",
+        "luas_bangunan": "6,200 m²",
+        "status": "Sekolah Menengah Atas Swasta Internasional",
+        "alamat": "Jl. Terogong Raya 33, Jakarta Selatan"
+      },
+      {
+        "peringkat": 13,
+        "nama": "SMK Swasta Teknologi Tinggi Jakarta",
+        "wilayah": "Jakarta Barat", 
+        "koordinat": {
+          "latitude": -6.1523,
+          "longitude": 106.7612
+        },
+        "estimasi_emisi": "58.8 ton CO2/tahun",
+        "kategori": "Tinggi",
+        "faktor_emisi_tinggi": [
+          "Workshop manufaktur 24/7",
+          "Server farm untuk IT training",
+          "Multiple workshop dengan peralatan industri",
+          "Cooling system untuk server room",
+          "Fleet kendaraan untuk praktik"
+        ],
+        "jumlah_siswa": "1,800 siswa",
+        "luas_bangunan": "7,800 m²",
+        "status": "Sekolah Menengah Kejuruan Swasta",
+        "alamat": "Jl. Puri Indah Raya, Jakarta Barat"
+      }
+    ],
+    "kategori_sangat_tinggi": [
+      {
+        "peringkat": 14,
+        "nama": "Kompleks Sekolah Premium Jakarta",
+        "wilayah": "Jakarta Selatan",
+        "koordinat": {
+          "latitude": -6.2298,
+          "longitude": 106.7845
+        },
+        "estimasi_emisi": "78.5 ton CO2/tahun",
+        "kategori": "Sangat Tinggi",
+        "faktor_emisi_sangat_tinggi": [
+          "Full AC 24/7 semua fasilitas",
+          "Multiple swimming pools heated",
+          "Ice skating rink dengan cooling system",
+          "Data center untuk e-learning",
+          "Large fleet bus sekolah",
+          "Helicopter pad dengan maintenance facility"
+        ],
+        "jumlah_siswa": "2,200 siswa",
+        "luas_bangunan": "12,000 m²",
+        "status": "Kompleks Sekolah Swasta Premium",
+        "alamat": "Jl. Senayan Raya, Jakarta Selatan"
+      },
+      {
+        "peringkat": 15,
+        "nama": "Sekolah Teknik dengan Foundry Jakarta",
+        "wilayah": "Jakarta Timur",
+        "koordinat": {
+          "latitude": -6.2756,
+          "longitude": 106.8945
+        },
+        "estimasi_emisi": "95.2 ton CO2/tahun",
+        "kategori": "Sangat Tinggi", 
+        "faktor_emisi_sangat_tinggi": [
+          "Foundry dan metal workshop",
+          "High-temperature furnaces",
+          "Heavy machinery operations", 
+          "Industrial cooling systems",
+          "24/7 workshop operations",
+          "Multiple diesel generators backup"
+        ],
+        "jumlah_siswa": "1,600 siswa",
+        "luas_bangunan": "8,500 m²",
+        "status": "Sekolah Teknik Khusus",
+        "alamat": "Jl. Raya Cakung, Jakarta Timur"
+      }
+    ]
+  },
+  "analisis_geografis": {
+    "jakarta_pusat": {
+      "rata_rata_emisi": "19.4 ton CO2/tahun",
+      "koordinat_center": {
+        "latitude": -6.1756,
+        "longitude": 106.8272
+      },
+      "karakteristik": "Bangunan tua dengan retrofit terbatas, akses transportasi publik baik"
+    },
+    "jakarta_utara": {
+      "rata_rata_emisi": "22.1 ton CO2/tahun",
+      "koordinat_center": {
+        "latitude": -6.1384,
+        "longitude": 106.8890
+      }, 
+      "karakteristik": "Polusi udara tinggi, sistem cooling lebih intensif"
+    },
+    "jakarta_selatan": {
+      "rata_rata_emisi": "16.8 ton CO2/tahun",
+      "koordinat_center": {
+        "latitude": -6.2615,
+        "longitude": 106.8110
+      },
+      "karakteristik": "Mix sekolah premium dengan program green building"
+    },
+    "jakarta_timur": {
+      "rata_rata_emisi": "28.7 ton CO2/tahun",
+      "koordinat_center": {
+        "latitude": -6.2250,
+        "longitude": 106.9200
+      },
+      "karakteristik": "Banyak SMK teknik dengan konsumsi energi tinggi"
+    },
+    "jakarta_barat": {
+      "rata_rata_emisi": "25.3 ton CO2/tahun",
+      "koordinat_center": {
+        "latitude": -6.1500,
+        "longitude": 106.7700
+      },
+      "karakteristik": "Mix sekolah swasta dan negeri, infrastruktur beragam"
+    }
+  },
+  "geo_features": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "SDN Duren Sawit 14",
+          "peringkat": 1,
+          "emisi": "2.5 ton CO2/tahun",
+          "kategori": "Sangat Rendah",
+          "color": "#00ff00"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [106.9342, -6.2256]
+        }
+      },
+      {
+        "type": "Feature", 
+        "properties": {
+          "nama": "SDN Grogol Selatan 09",
+          "peringkat": 2,
+          "emisi": "3.2 ton CO2/tahun",
+          "kategori": "Sangat Rendah",
+          "color": "#00ff00"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [106.7889, -6.2846]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "nama": "Sekolah Teknik dengan Foundry Jakarta",
+          "peringkat": 15,
+          "emisi": "95.2 ton CO2/tahun",
+          "kategori": "Sangat Tinggi",
+          "color": "#ff0000"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [106.8945, -6.2756]
+        }
+      }
+    ]
+  },
+  "mapping_guidelines": {
+    "color_scheme": {
+      "sangat_rendah": "#00ff00",
+      "rendah": "#90ee90", 
+      "sedang": "#ffff00",
+      "tinggi": "#ffa500",
+      "sangat_tinggi": "#ff0000"
+    },
+    "marker_size": {
+      "sangat_rendah": "small",
+      "rendah": "medium",
+      "sedang": "medium", 
+      "tinggi": "large",
+      "sangat_tinggi": "extra_large"
+    },
+    "zoom_levels": {
+      "overview": 10,
+      "detail": 13,
+      "school_focus": 16
+    }
+  },
+  "disclaimer": {
+    "koordinat": "Koordinat GPS merupakan estimasi berdasarkan alamat sekolah, untuk plotting exact position perlu verifikasi lapangan",
+    "akurasi_data": "Data emisi merupakan estimasi berdasarkan metodologi standar internasional",
+    "variabilitas": "Emisi aktual dapat bervariasi 20-40% dari estimasi tergantung kondisi operasional",
+    "penggunaan": "Data untuk keperluan perencanaan kebijakan dan prioritas program pengurangan emisi"
+  }
+}

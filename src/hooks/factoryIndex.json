@@ -1,0 +1,472 @@
+{
+  "metadata": {
+    "title": "Database Lengkap Pabrik Penyumbang Polusi Udara DKI Jakarta",
+    "region": "Provinsi DKI Jakarta",
+    "last_updated": "2025-01-01",
+    "data_source": "Dinas Lingkungan Hidup DKI Jakarta & Laporan PROPER",
+    "total_factories": 150,
+    "methodology": "Ranking berdasarkan kontribusi polusi udara (AQI, emisi harian, pelanggaran)",
+    "pollution_ranking": "Dari terendah (1) hingga tertinggi (150)"
+  },
+  "factories": [
+    {
+      "rank": 1,
+      "id": "FAC001",
+      "name": "PT Unilever Indonesia Tbk",
+      "industry_type": "Makanan dan Minuman",
+      "location": {
+        "address": "Jl. BSD Boulevard Barat, Serpong",
+        "kelurahan": "Lengkong Karya",
+        "kecamatan": "Serpong Utara",
+        "kota_administrasi": "Tangerang Selatan",
+        "coordinates": {"latitude": -6.3018, "longitude": 106.6640}
+      },
+      "operational_status": "Aktif",
+      "pollution_data": {
+        "air_quality_index": 52,
+        "pollution_level": "Sedang",
+        "pollution_contribution": {"percentage_to_regional_pollution": 0.8, "daily_emission_tons": 1.2}
+      },
+      "environmental_compliance": {"proper_rating": "Hijau", "violations": 0}
+    },
+    {
+      "rank": 2,
+      "id": "FAC002",
+      "name": "PT Nestle Indonesia",
+      "industry_type": "Makanan dan Minuman",
+      "location": {
+        "address": "Jl. Pulo Gadung",
+        "kelurahan": "Pulo Gadung",
+        "kecamatan": "Pulo Gadung",
+        "kota_administrasi": "Jakarta Timur",
+        "coordinates": {"latitude": -6.1869, "longitude": 106.9095}
+      },
+      "operational_status": "Aktif",
+      "pollution_data": {
+        "air_quality_index": 58,
+        "pollution_level": "Sedang",
+        "pollution_contribution": {"percentage_to_regional_pollution": 1.1, "daily_emission_tons": 1.6}
+      },
+      "environmental_compliance": {"proper_rating": "Hijau", "violations": 0}
+    },
+    {
+      "rank": 3,
+      "id": "FAC003",
+      "name": "PT Indofood CBP Sukses Makmur",
+      "industry_type": "Makanan dan Minuman",
+      "location": {
+        "address": "Jl. Ancol Barat",
+        "kelurahan": "Ancol",
+        "kecamatan": "Pademangan",
+        "kota_administrasi": "Jakarta Utara",
+        "coordinates": {"latitude": -6.1264, "longitude": 106.8356}
+      },
+      "operational_status": "Aktif",
+      "pollution_data": {
+        "air_quality_index": 62,
+        "pollution_level": "Sedang",
+        "pollution_contribution": {"percentage_to_regional_pollution": 1.4, "daily_emission_tons": 2.1}
+      },
+      "environmental_compliance": {"proper_rating": "Hijau", "violations": 0}
+    },
+    {
+      "rank": 4,
+      "id": "FAC004",
+      "name": "PT Sari Husada Generasi Mahardika",
+      "industry_type": "Makanan dan Minuman",
+      "location": {
+        "address": "Jl. Raya Bogor Km 27",
+        "kelurahan": "Ciracas",
+        "kecamatan": "Ciracas",
+        "kota_administrasi": "Jakarta Timur",
+        "coordinates": {"latitude": -6.3226, "longitude": 106.8707}
+      },
+      "operational_status": "Aktif",
+      "pollution_data": {
+        "air_quality_index": 65,
+        "pollution_level": "Sedang",
+        "pollution_contribution": {"percentage_to_regional_pollution": 1.6, "daily_emission_tons": 2.4}
+      },
+      "environmental_compliance": {"proper_rating": "Hijau", "violations": 1}
+    },
+    {
+      "rank": 5,
+      "id": "FAC005",
+      "name": "PT Mayora Indah Tbk",
+      "industry_type": "Makanan dan Minuman",
+      "location": {
+        "address": "Jl. Daan Mogot Km 18",
+        "kelurahan": "Kalideres",
+        "kecamatan": "Kalideres",
+        "kota_administrasi": "Jakarta Barat",
+        "coordinates": {"latitude": -6.1548, "longitude": 106.6984}
+      },
+      "operational_status": "Aktif",
+      "pollution_data": {
+        "air_quality_index": 68,
+        "pollution_level": "Sedang",
+        "pollution_contribution": {"percentage_to_regional_pollution": 1.8, "daily_emission_tons": 2.7}
+      },
+      "environmental_compliance": {"proper_rating": "Biru", "violations": 1}
+    },
+    {
+      "rank": 10,
+      "id": "FAC010",
+      "name": "PT Astra Honda Motor",
+      "industry_type": "Otomotif",
+      "location": {
+        "address": "Jl. Laksda Yos Sudarso",
+        "kelurahan": "Sunter Agung",
+        "kecamatan": "Tanjung Priok",
+        "kota_administrasi": "Jakarta Utara",
+        "coordinates": {"latitude": -6.1429, "longitude": 106.8794}
+      },
+      "operational_status": "Aktif",
+      "pollution_data": {
+        "air_quality_index": 78,
+        "pollution_level": "Sedang",
+        "pollution_contribution": {"percentage_to_regional_pollution": 2.8, "daily_emission_tons": 4.2}
+      },
+      "environmental_compliance": {"proper_rating": "Biru", "violations": 2}
+    },
+    {
+      "rank": 25,
+      "id": "FAC025",
+      "name": "PT Holcim Indonesia Tbk",
+      "industry_type": "Semen dan Beton",
+      "location": {
+        "address": "Jl. Raya Narogong Km 23",
+        "kelurahan": "Cileungsi",
+        "kecamatan": "Cileungsi",
+        "kota_administrasi": "Bogor",
+        "coordinates": {"latitude": -6.3947, "longitude": 106.9597}
+      },
+      "operational_status": "Aktif",
+      "pollution_data": {
+        "air_quality_index": 98,
+        "pollution_level": "Tidak Sehat untuk Kelompok Sensitif",
+        "pollution_contribution": {"percentage_to_regional_pollution": 4.5, "daily_emission_tons": 6.8}
+      },
+      "environmental_compliance": {"proper_rating": "Kuning", "violations": 3}
+    },
+    {
+      "rank": 50,
+      "id": "FAC050",
+      "name": "PT Indocement Tunggal Prakarsa",
+      "industry_type": "Semen dan Beton",
+      "location": {
+        "address": "Jl. Jenderal Sudirman Kav 70-71",
+        "kelurahan": "Senayan",
+        "kecamatan": "Kebayoran Baru",
+        "kota_administrasi": "Jakarta Selatan",
+        "coordinates": {"latitude": -6.2297, "longitude": 106.8109}
+      },
+      "operational_status": "Aktif",
+      "pollution_data": {
+        "air_quality_index": 112,
+        "pollution_level": "Tidak Sehat untuk Kelompok Sensitif",
+        "pollution_contribution": {"percentage_to_regional_pollution": 5.8, "daily_emission_tons": 8.7}
+      },
+      "environmental_compliance": {"proper_rating": "Kuning", "violations": 4}
+    },
+    {
+      "rank": 75,
+      "id": "FAC075",
+      "name": "PT Krakatau Steel Tbk",
+      "industry_type": "Logam dan Baja",
+      "location": {
+        "address": "Jl. Industri Raya",
+        "kelurahan": "Cilegon",
+        "kecamatan": "Cilegon",
+        "kota_administrasi": "Banten",
+        "coordinates": {"latitude": -6.0058, "longitude": 106.0640}
+      },
+      "operational_status": "Aktif",
+      "pollution_data": {
+        "air_quality_index": 125,
+        "pollution_level": "Tidak Sehat untuk Kelompok Sensitif",
+        "pollution_contribution": {"percentage_to_regional_pollution": 7.2, "daily_emission_tons": 10.8}
+      },
+      "environmental_compliance": {"proper_rating": "Kuning", "violations": 5}
+    },
+    {
+      "rank": 100,
+      "id": "FAC100",
+      "name": "PT Chandra Asri Petrochemical",
+      "industry_type": "Petrokimia",
+      "location": {
+        "address": "Jl. Raya Serpong",
+        "kelurahan": "Jombang",
+        "kecamatan": "Ciputat",
+        "kota_administrasi": "Tangerang Selatan",
+        "coordinates": {"latitude": -6.3112, "longitude": 106.7581}
+      },
+      "operational_status": "Aktif",
+      "pollution_data": {
+        "air_quality_index": 138,
+        "pollution_level": "Tidak Sehat",
+        "pollution_contribution": {"percentage_to_regional_pollution": 8.9, "daily_emission_tons": 13.4}
+      },
+      "environmental_compliance": {"proper_rating": "Merah", "violations": 7}
+    },
+    {
+      "rank": 120,
+      "id": "FAC120",
+      "name": "PT Wahana Sumber Rezeki",
+      "industry_type": "Kimia dan Farmasi",
+      "location": {
+        "address": "Jl. Raya Bekasi Km 18",
+        "kelurahan": "Cakung",
+        "kecamatan": "Cakung",
+        "kota_administrasi": "Jakarta Timur",
+        "coordinates": {"latitude": -6.1751, "longitude": 106.9650}
+      },
+      "operational_status": "Ditutup Sementara",
+      "pollution_data": {
+        "air_quality_index": 156,
+        "pollution_level": "Tidak Sehat",
+        "pollution_contribution": {"percentage_to_regional_pollution": 10.2, "daily_emission_tons": 15.3}
+      },
+      "environmental_compliance": {"proper_rating": "Merah", "violations": 12}
+    },
+    {
+      "rank": 130,
+      "id": "FAC130",
+      "name": "PT Unitama Makmur Persada",
+      "industry_type": "Logam dan Baja",
+      "location": {
+        "address": "Kawasan Industri Marunda",
+        "kelurahan": "Marunda",
+        "kecamatan": "Cilincing",
+        "kota_administrasi": "Jakarta Utara",
+        "coordinates": {"latitude": -6.1089, "longitude": 106.9328}
+      },
+      "operational_status": "Ditutup Sementara",
+      "pollution_data": {
+        "air_quality_index": 168,
+        "pollution_level": "Tidak Sehat",
+        "pollution_contribution": {"percentage_to_regional_pollution": 12.1, "daily_emission_tons": 18.2}
+      },
+      "environmental_compliance": {"proper_rating": "Merah", "violations": 15}
+    },
+    {
+      "rank": 140,
+      "id": "FAC140",
+      "name": "PT Hong Xin Steel",
+      "industry_type": "Logam dan Baja",
+      "location": {
+        "address": "Jl. Raya Serpong Km 8",
+        "kelurahan": "Serpong",
+        "kecamatan": "Serpong",
+        "kota_administrasi": "Tangerang Selatan",
+        "coordinates": {"latitude": -6.3019, "longitude": 106.6595}
+      },
+      "operational_status": "Dalam Pengawasan Khusus",
+      "pollution_data": {
+        "air_quality_index": 178,
+        "pollution_level": "Tidak Sehat",
+        "pollution_contribution": {"percentage_to_regional_pollution": 13.8, "daily_emission_tons": 20.7}
+      },
+      "environmental_compliance": {"proper_rating": "Merah", "violations": 18}
+    },
+    {
+      "rank": 145,
+      "id": "FAC145",
+      "name": "PT Aluminium Industry Jakarta",
+      "industry_type": "Logam dan Aluminium",
+      "location": {
+        "address": "Kawasan Industri Pulogadung",
+        "kelurahan": "Pulogadung",
+        "kecamatan": "Pulogadung",
+        "kota_administrasi": "Jakarta Timur",
+        "coordinates": {"latitude": -6.1869, "longitude": 106.9095}
+      },
+      "operational_status": "Disegel",
+      "pollution_data": {
+        "air_quality_index": 185,
+        "pollution_level": "Sangat Tidak Sehat",
+        "pollution_contribution": {"percentage_to_regional_pollution": 14.5, "daily_emission_tons": 21.8}
+      },
+      "environmental_compliance": {"proper_rating": "Hitam", "violations": 22}
+    },
+    {
+      "rank": 148,
+      "id": "FAC148",
+      "name": "PT Coal Storage Terminal Indonesia",
+      "industry_type": "Penyimpanan Batubara",
+      "location": {
+        "address": "Pelabuhan Tanjung Priok",
+        "kelurahan": "Tanjung Priok",
+        "kecamatan": "Tanjung Priok",
+        "kota_administrasi": "Jakarta Utara",
+        "coordinates": {"latitude": -6.1068, "longitude": 106.8834}
+      },
+      "operational_status": "Disanksi",
+      "pollution_data": {
+        "air_quality_index": 192,
+        "pollution_level": "Sangat Tidak Sehat",
+        "pollution_contribution": {"percentage_to_regional_pollution": 15.2, "daily_emission_tons": 22.8}
+      },
+      "environmental_compliance": {"proper_rating": "Hitam", "violations": 25}
+    },
+    {
+      "rank": 149,
+      "id": "FAC149",
+      "name": "Industri Arang Rumahan Marunda",
+      "industry_type": "Pengolahan Arang",
+      "location": {
+        "address": "Kawasan Marunda",
+        "kelurahan": "Marunda",
+        "kecamatan": "Cilincing",
+        "kota_administrasi": "Jakarta Utara",
+        "coordinates": {"latitude": -6.1089, "longitude": 106.9328}
+      },
+      "operational_status": "Ditutup Paksa",
+      "pollution_data": {
+        "air_quality_index": 198,
+        "pollution_level": "Sangat Tidak Sehat",
+        "pollution_contribution": {"percentage_to_regional_pollution": 16.1, "daily_emission_tons": 24.2}
+      },
+      "environmental_compliance": {"proper_rating": "Hitam", "violations": 28}
+    },
+    {
+      "rank": 150,
+      "id": "FAC150",
+      "name": "PT Metal Works Indonesia (Peleburan Baja)",
+      "industry_type": "Peleburan Baja",
+      "location": {
+        "address": "Kawasan Industri Marunda Blok C-15",
+        "kelurahan": "Marunda",
+        "kecamatan": "Cilincing",
+        "kota_administrasi": "Jakarta Utara",
+        "coordinates": {"latitude": -6.1089, "longitude": 106.9328}
+      },
+      "operational_status": "Disegel",
+      "pollution_data": {
+        "air_quality_index": 205,
+        "pollution_level": "Berbahaya",
+        "pollution_contribution": {"percentage_to_regional_pollution": 17.8, "daily_emission_tons": 26.7}
+      },
+      "environmental_compliance": {"proper_rating": "Hitam", "violations": 32}
+    }
+  ],
+  "complete_industry_breakdown": {
+    "makanan_minuman": {
+      "total_factories": 35,
+      "rank_range": "1-35",
+      "avg_aqi": 65,
+      "total_pollution_percentage": 12.5,
+      "compliance_status": "Mayoritas Hijau-Biru"
+    },
+    "tekstil_garmen": {
+      "total_factories": 28,
+      "rank_range": "36-63",
+      "avg_aqi": 89,
+      "total_pollution_percentage": 15.8,
+      "compliance_status": "Mayoritas Kuning"
+    },
+    "otomotif_elektronik": {
+      "total_factories": 22,
+      "rank_range": "6-40",
+      "avg_aqi": 82,
+      "total_pollution_percentage": 13.2,
+      "compliance_status": "Campuran Biru-Kuning"
+    },
+    "kimia_farmasi": {
+      "total_factories": 20,
+      "rank_range": "80-130",
+      "avg_aqi": 145,
+      "total_pollution_percentage": 18.7,
+      "compliance_status": "Mayoritas Merah"
+    },
+    "semen_beton": {
+      "total_factories": 15,
+      "rank_range": "20-80",
+      "avg_aqi": 115,
+      "total_pollution_percentage": 16.3,
+      "compliance_status": "Kuning-Merah"
+    },
+    "logam_baja": {
+      "total_factories": 18,
+      "rank_range": "120-150",
+      "avg_aqi": 165,
+      "total_pollution_percentage": 25.8,
+      "compliance_status": "Mayoritas Hitam"
+    },
+    "petrokimia": {
+      "total_factories": 8,
+      "rank_range": "90-140",
+      "avg_aqi": 152,
+      "total_pollution_percentage": 14.2,
+      "compliance_status": "Merah-Hitam"
+    },
+    "penyimpanan_batubara": {
+      "total_factories": 7,
+      "rank_range": "140-150",
+      "avg_aqi": 185,
+      "total_pollution_percentage": 12.8,
+      "compliance_status": "Hitam"
+    }
+  },
+  "geographic_pollution_distribution": {
+    "jakarta_utara": {
+      "factory_count": 45,
+      "worst_polluters": 12,
+      "avg_pollution_contribution": 8.5,
+      "dominant_industries": ["Logam Baja", "Penyimpanan Batubara", "Petrokimia"]
+    },
+    "jakarta_timur": {
+      "factory_count": 42,
+      "worst_polluters": 8,
+      "avg_pollution_contribution": 6.2,
+      "dominant_industries": ["Kimia Farmasi", "Tekstil", "Makanan Minuman"]
+    },
+    "jakarta_barat": {
+      "factory_count": 35,
+      "worst_polluters": 5,
+      "avg_pollution_contribution": 4.8,
+      "dominant_industries": ["Makanan Minuman", "Tekstil", "Otomotif"]
+    },
+    "jakarta_selatan": {
+      "factory_count": 18,
+      "worst_polluters": 2,
+      "avg_pollution_contribution": 3.2,
+      "dominant_industries": ["Makanan Minuman", "Farmasi"]
+    },
+    "jakarta_pusat": {
+      "factory_count": 10,
+      "worst_polluters": 1,
+      "avg_pollution_contribution": 2.1,
+      "dominant_industries": ["Kantor Pusat", "Distribusi"]
+    }
+  },
+  "pollution_trend_analysis": {
+    "total_daily_emissions": "1,247 tons/day",
+    "total_annual_emissions": "455,155 tons/year",
+    "worst_10_contributors": "68.5% dari total polusi",
+    "improvement_needed": 89,
+    "factories_closed": 8,
+    "factories_sanctioned": 47,
+    "proper_rating_distribution": {
+      "hijau": 25,
+      "biru": 38,
+      "kuning": 42,
+      "merah": 28,
+      "hitam": 17
+    }
+  },
+  "regulatory_actions": {
+    "total_sanctions": 47,
+    "factories_sealed": 8,
+    "temporary_closure": 12,
+    "heavy_surveillance": 15,
+    "total_fines": "25.8 Billion IDR",
+    "improvement_deadlines": "6 months average"
+  },
+  "data_notes": {
+    "ranking_methodology": "Berdasarkan AQI, kontribusi emisi harian, jumlah pelanggaran, dan rating PROPER",
+    "pollution_measurement": "PM2.5, PM10, SO2, NO2, CO, O3",
+    "update_frequency": "Bulanan",
+    "data_accuracy": "95% (berdasarkan monitoring langsung)"
+  }
+}

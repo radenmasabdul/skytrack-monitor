@@ -1,0 +1,560 @@
+[
+  {
+    "region": "Jakarta Utara",
+    "districts": [
+      {
+        "name": "Tanjung Priok",
+        "aqi_us": 60,
+        "category": "Moderate",
+        "pm2_5": 14,
+        "pm10": 38,
+        "co": 33,
+        "no2": 12,
+        "o3": 18,
+        "lat": -6.1166,
+        "lng": 106.8865
+      },
+      {
+        "name": "Kelapa Gading",
+        "aqi_us": 50,
+        "category": "Good",
+        "pm2_5": 10,
+        "pm10": 32,
+        "co": 29,
+        "no2": 10,
+        "o3": 15,
+        "lat": -6.1498,
+        "lng": 106.9126
+      },
+      {
+        "name": "Penjaringan",
+        "aqi_us": 70,
+        "category": "Moderate",
+        "pm2_5": 20,
+        "pm10": 45,
+        "co": 40,
+        "no2": 18,
+        "o3": 22,
+        "lat": -6.1175,
+        "lng": 106.7852
+      },
+      {
+        "name": "Pademangan",
+        "aqi_us": 72,
+        "category": "Moderate",
+        "pm2_5": 19,
+        "pm10": 46,
+        "co": 41,
+        "no2": 17,
+        "o3": 23,
+        "lat": -6.1255,
+        "lng": 106.8445
+      },
+      {
+        "name": "Ancol",
+        "aqi_us": 58,
+        "category": "Moderate",
+        "pm2_5": 13,
+        "pm10": 35,
+        "co": 32,
+        "no2": 11,
+        "o3": 17,
+        "lat": -6.1189,
+        "lng": 106.8417
+      },
+      {
+        "name": "Koja",
+        "aqi_us": 68,
+        "category": "Moderate",
+        "pm2_5": 18,
+        "pm10": 43,
+        "co": 38,
+        "no2": 15,
+        "o3": 21,
+        "lat": -6.1089,
+        "lng": 106.8978
+      }
+    ]
+  },
+  {
+    "region": "Jakarta Barat",
+    "districts": [
+      {
+        "name": "Cengkareng",
+        "aqi_us": 80,
+        "category": "Moderate",
+        "pm2_5": 22,
+        "pm10": 52,
+        "co": 42,
+        "no2": 20,
+        "o3": 24,
+        "lat": -6.1388,
+        "lng": 106.7417
+      },
+      {
+        "name": "Kebon Jeruk",
+        "aqi_us": 75,
+        "category": "Moderate",
+        "pm2_5": 19,
+        "pm10": 48,
+        "co": 39,
+        "no2": 16,
+        "o3": 20,
+        "lat": -6.2019,
+        "lng": 106.7704
+      },
+      {
+        "name": "Tambora",
+        "aqi_us": 85,
+        "category": "Moderate",
+        "pm2_5": 24,
+        "pm10": 60,
+        "co": 44,
+        "no2": 22,
+        "o3": 28,
+        "lat": -6.1511,
+        "lng": 106.8148
+      },
+      {
+        "name": "Taman Sari",
+        "aqi_us": 78,
+        "category": "Moderate",
+        "pm2_5": 21,
+        "pm10": 50,
+        "co": 40,
+        "no2": 19,
+        "o3": 25,
+        "lat": -6.1652,
+        "lng": 106.8144
+      },
+      {
+        "name": "Grogol Petamburan",
+        "aqi_us": 82,
+        "category": "Moderate",
+        "pm2_5": 23,
+        "pm10": 54,
+        "co": 43,
+        "no2": 21,
+        "o3": 26,
+        "lat": -6.1738,
+        "lng": 106.7931
+      },
+      {
+        "name": "Palmerah",
+        "aqi_us": 77,
+        "category": "Moderate",
+        "pm2_5": 20,
+        "pm10": 49,
+        "co": 39,
+        "no2": 18,
+        "o3": 24,
+        "lat": -6.2084,
+        "lng": 106.8045
+      },
+      {
+        "name": "Kembangan",
+        "aqi_us": 79,
+        "category": "Moderate",
+        "pm2_5": 21,
+        "pm10": 51,
+        "co": 41,
+        "no2": 19,
+        "o3": 25,
+        "lat": -6.1658,
+        "lng": 106.7587
+      },
+      {
+        "name": "Kalideres",
+        "aqi_us": 83,
+        "category": "Moderate",
+        "pm2_5": 23,
+        "pm10": 55,
+        "co": 44,
+        "no2": 21,
+        "o3": 27,
+        "lat": -6.1452,
+        "lng": 106.7197
+      }
+    ]
+  },
+  {
+    "region": "Jakarta Timur",
+    "districts": [
+      {
+        "name": "Duren Sawit",
+        "aqi_us": 110,
+        "category": "Unhealthy for Sensitive Groups",
+        "pm2_5": 36,
+        "pm10": 75,
+        "co": 55,
+        "no2": 35,
+        "o3": 40,
+        "lat": -6.2217,
+        "lng": 106.9031
+      },
+      {
+        "name": "Cipayung",
+        "aqi_us": 95,
+        "category": "Moderate",
+        "pm2_5": 30,
+        "pm10": 65,
+        "co": 48,
+        "no2": 30,
+        "o3": 38,
+        "lat": -6.3116,
+        "lng": 106.8921
+      },
+      {
+        "name": "Pasar Rebo",
+        "aqi_us": 105,
+        "category": "Unhealthy for Sensitive Groups",
+        "pm2_5": 33,
+        "pm10": 70,
+        "co": 53,
+        "no2": 32,
+        "o3": 42,
+        "lat": -6.3229,
+        "lng": 106.8616
+      },
+      {
+        "name": "Cakung",
+        "aqi_us": 88,
+        "category": "Moderate",
+        "pm2_5": 26,
+        "pm10": 58,
+        "co": 45,
+        "no2": 24,
+        "o3": 30,
+        "lat": -6.1743,
+        "lng": 106.9489
+      },
+      {
+        "name": "Pulo Gadung",
+        "aqi_us": 92,
+        "category": "Moderate",
+        "pm2_5": 28,
+        "pm10": 62,
+        "co": 47,
+        "no2": 27,
+        "o3": 33,
+        "lat": -6.1843,
+        "lng": 106.9134
+      },
+      {
+        "name": "Jatinegara",
+        "aqi_us": 87,
+        "category": "Moderate",
+        "pm2_5": 25,
+        "pm10": 57,
+        "co": 44,
+        "no2": 23,
+        "o3": 29,
+        "lat": -6.2156,
+        "lng": 106.8702
+      },
+      {
+        "name": "Kramat Jati",
+        "aqi_us": 98,
+        "category": "Moderate",
+        "pm2_5": 31,
+        "pm10": 67,
+        "co": 50,
+        "no2": 29,
+        "o3": 36,
+        "lat": -6.2645,
+        "lng": 106.8745
+      },
+      {
+        "name": "Matraman",
+        "aqi_us": 85,
+        "category": "Moderate",
+        "pm2_5": 24,
+        "pm10": 55,
+        "co": 43,
+        "no2": 22,
+        "o3": 28,
+        "lat": -6.2009,
+        "lng": 106.8589
+      },
+      {
+        "name": "Pasar Rebo",
+        "aqi_us": 100,
+        "category": "Moderate",
+        "pm2_5": 32,
+        "pm10": 68,
+        "co": 51,
+        "no2": 30,
+        "o3": 37,
+        "lat": -6.2889,
+        "lng": 106.8734
+      },
+      {
+        "name": "Makasar",
+        "aqi_us": 93,
+        "category": "Moderate",
+        "pm2_5": 29,
+        "pm10": 63,
+        "co": 48,
+        "no2": 28,
+        "o3": 34,
+        "lat": -6.2334,
+        "lng": 106.9012
+      }
+    ]
+  },
+  {
+    "region": "Jakarta Pusat",
+    "districts": [
+      {
+        "name": "Menteng",
+        "aqi_us": 65,
+        "category": "Moderate",
+        "pm2_5": 17,
+        "pm10": 42,
+        "co": 37,
+        "no2": 14,
+        "o3": 19,
+        "lat": -6.1976,
+        "lng": 106.8326
+      },
+      {
+        "name": "Kemayoran",
+        "aqi_us": 70,
+        "category": "Moderate",
+        "pm2_5": 18,
+        "pm10": 44,
+        "co": 38,
+        "no2": 16,
+        "o3": 21,
+        "lat": -6.1685,
+        "lng": 106.8651
+      },
+      {
+        "name": "Tanah Abang",
+        "aqi_us": 60,
+        "category": "Moderate",
+        "pm2_5": 15,
+        "pm10": 40,
+        "co": 35,
+        "no2": 13,
+        "o3": 18,
+        "lat": -6.1887,
+        "lng": 106.8111
+      },
+      {
+        "name": "Gambir",
+        "aqi_us": 68,
+        "category": "Moderate",
+        "pm2_5": 18,
+        "pm10": 43,
+        "co": 38,
+        "no2": 15,
+        "o3": 21,
+        "lat": -6.1745,
+        "lng": 106.8227
+      },
+      {
+        "name": "Sawah Besar",
+        "aqi_us": 72,
+        "category": "Moderate",
+        "pm2_5": 19,
+        "pm10": 46,
+        "co": 40,
+        "no2": 17,
+        "o3": 23,
+        "lat": -6.1634,
+        "lng": 106.8345
+      },
+      {
+        "name": "Cempaka Putih",
+        "aqi_us": 74,
+        "category": "Moderate",
+        "pm2_5": 20,
+        "pm10": 47,
+        "co": 41,
+        "no2": 18,
+        "o3": 24,
+        "lat": -6.1789,
+        "lng": 106.8789
+      },
+      {
+        "name": "Johar Baru",
+        "aqi_us": 76,
+        "category": "Moderate",
+        "pm2_5": 20,
+        "pm10": 48,
+        "co": 42,
+        "no2": 19,
+        "o3": 25,
+        "lat": -6.1923,
+        "lng": 106.8567
+      },
+      {
+        "name": "Senen",
+        "aqi_us": 75,
+        "category": "Moderate",
+        "pm2_5": 20,
+        "pm10": 48,
+        "co": 41,
+        "no2": 18,
+        "o3": 24,
+        "lat": -6.1834,
+        "lng": 106.8445
+      }
+    ]
+  },
+  {
+    "region": "Jakarta Selatan",
+    "districts": [
+      {
+        "name": "Tebet",
+        "aqi_us": 55,
+        "category": "Moderate",
+        "pm2_5": 13,
+        "pm10": 34,
+        "co": 30,
+        "no2": 12,
+        "o3": 17,
+        "lat": -6.2354,
+        "lng": 106.8478
+      },
+      {
+        "name": "Kebayoran Baru",
+        "aqi_us": 45,
+        "category": "Good",
+        "pm2_5": 9,
+        "pm10": 30,
+        "co": 28,
+        "no2": 10,
+        "o3": 14,
+        "lat": -6.2446,
+        "lng": 106.8002
+      },
+      {
+        "name": "Pasar Minggu",
+        "aqi_us": 50,
+        "category": "Good",
+        "pm2_5": 11,
+        "pm10": 32,
+        "co": 29,
+        "no2": 11,
+        "o3": 16,
+        "lat": -6.2845,
+        "lng": 106.8424
+      },
+      {
+        "name": "Setiabudi",
+        "aqi_us": 48,
+        "category": "Good",
+        "pm2_5": 10,
+        "pm10": 31,
+        "co": 28,
+        "no2": 10,
+        "o3": 15,
+        "lat": -6.2089,
+        "lng": 106.8234
+      },
+      {
+        "name": "Mampang Prapatan",
+        "aqi_us": 52,
+        "category": "Moderate",
+        "pm2_5": 12,
+        "pm10": 33,
+        "co": 30,
+        "no2": 11,
+        "o3": 16,
+        "lat": -6.2478,
+        "lng": 106.8223
+      },
+      {
+        "name": "Pancoran",
+        "aqi_us": 58,
+        "category": "Moderate",
+        "pm2_5": 14,
+        "pm10": 36,
+        "co": 32,
+        "no2": 13,
+        "o3": 18,
+        "lat": -6.2567,
+        "lng": 106.8445
+      },
+      {
+        "name": "Jagakarsa",
+        "aqi_us": 54,
+        "category": "Moderate",
+        "pm2_5": 13,
+        "pm10": 35,
+        "co": 31,
+        "no2": 12,
+        "o3": 17,
+        "lat": -6.3234,
+        "lng": 106.8234
+      },
+      {
+        "name": "Pesanggrahan",
+        "aqi_us": 56,
+        "category": "Moderate",
+        "pm2_5": 14,
+        "pm10": 37,
+        "co": 32,
+        "no2": 13,
+        "o3": 18,
+        "lat": -6.2656,
+        "lng": 106.7789
+      },
+      {
+        "name": "Cilandak",
+        "aqi_us": 47,
+        "category": "Good",
+        "pm2_5": 10,
+        "pm10": 30,
+        "co": 27,
+        "no2": 9,
+        "o3": 14,
+        "lat": -6.2934,
+        "lng": 106.8023
+      },
+      {
+        "name": "Kebayoran Lama",
+        "aqi_us": 49,
+        "category": "Good",
+        "pm2_5": 11,
+        "pm10": 31,
+        "co": 28,
+        "no2": 10,
+        "o3": 15,
+        "lat": -6.2389,
+        "lng": 106.7745
+      }
+    ]
+  },
+  {
+    "region": "Kepulauan Seribu",
+    "districts": [
+      {
+        "name": "Kepulauan Seribu Utara",
+        "aqi_us": 25,
+        "category": "Good",
+        "pm2_5": 5,
+        "pm10": 18,
+        "co": 15,
+        "no2": 3,
+        "o3": 8,
+        "lat": -5.6189,
+        "lng": 106.6167
+      },
+      {
+        "name": "Kepulauan Seribu Selatan",
+        "aqi_us": 22,
+        "category": "Good",
+        "pm2_5": 4,
+        "pm10": 16,
+        "co": 12,
+        "no2": 2,
+        "o3": 6,
+        "lat": -5.7834,
+        "lng": 106.5234
+      }
+    ]
+  }
+]

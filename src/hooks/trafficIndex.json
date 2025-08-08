@@ -1,0 +1,265 @@
+{
+  "metadata": {
+    "last_updated": "2025-08-07T14:30:00+07:00",
+    "source": "Dishub DKI Jakarta",
+    "update_interval": "5_minutes"
+  },
+  "traffic_status": {
+    "green": "Lancar",
+    "yellow": "Ramai Lancar", 
+    "orange": "Padat",
+    "red": "Macet"
+  },
+  "regions": [
+    {
+      "id": "jakarta_pusat",
+      "name": "Jakarta Pusat",
+      "overall_status": "orange",
+      "roads": [
+        {
+          "road_name": "Jl. MH Thamrin",
+          "segment": "Bundaran HI - Patung Kuda",
+          "status": "red",
+          "speed_kmh": 15,
+          "travel_time_minutes": 25,
+          "coordinates": {
+            "start": {"lat": -6.1944, "lng": 106.8229},
+            "end": {"lat": -6.1975, "lng": 106.8229}
+          }
+        },
+        {
+          "road_name": "Jl. Sudirman",
+          "segment": "Patung Kuda - Senayan",
+          "status": "orange",
+          "speed_kmh": 35,
+          "travel_time_minutes": 18,
+          "coordinates": {
+            "start": {"lat": -6.1975, "lng": 106.8229},
+            "end": {"lat": -6.2088, "lng": 106.8229}
+          }
+        },
+        {
+          "road_name": "Jl. Gatot Subroto",
+          "segment": "Semanggi - Kuningan",
+          "status": "yellow",
+          "speed_kmh": 45,
+          "travel_time_minutes": 12,
+          "coordinates": {
+            "start": {"lat": -6.2088, "lng": 106.8229},
+            "end": {"lat": -6.2184, "lng": 106.8317}
+          }
+        }
+      ]
+    },
+    {
+      "id": "jakarta_selatan",
+      "name": "Jakarta Selatan", 
+      "overall_status": "yellow",
+      "roads": [
+        {
+          "road_name": "Jl. TB Simatupang",
+          "segment": "Kuningan - Fatmawati",
+          "status": "orange",
+          "speed_kmh": 30,
+          "travel_time_minutes": 35,
+          "coordinates": {
+            "start": {"lat": -6.2184, "lng": 106.8317},
+            "end": {"lat": -6.2615, "lng": 106.7942}
+          }
+        },
+        {
+          "road_name": "Jl. Casablanca Raya",
+          "segment": "Kuningan - Pancoran",
+          "status": "green",
+          "speed_kmh": 55,
+          "travel_time_minutes": 15,
+          "coordinates": {
+            "start": {"lat": -6.2184, "lng": 106.8317},
+            "end": {"lat": -6.2501, "lng": 106.8545}
+          }
+        },
+        {
+          "road_name": "Jl. HR Rasuna Said",
+          "segment": "Kuningan - Setiabudi",
+          "status": "yellow", 
+          "speed_kmh": 40,
+          "travel_time_minutes": 20,
+          "coordinates": {
+            "start": {"lat": -6.2184, "lng": 106.8317},
+            "end": {"lat": -6.2088, "lng": 106.8416}
+          }
+        }
+      ]
+    },
+    {
+      "id": "jakarta_utara",
+      "name": "Jakarta Utara",
+      "overall_status": "green", 
+      "roads": [
+        {
+          "road_name": "Jl. RE Martadinata",
+          "segment": "Ancol - Kelapa Gading",
+          "status": "green",
+          "speed_kmh": 60,
+          "travel_time_minutes": 18,
+          "coordinates": {
+            "start": {"lat": -6.1220, "lng": 106.8344},
+            "end": {"lat": -6.1587, "lng": 106.9056}
+          }
+        },
+        {
+          "road_name": "Jl. Yos Sudarso",
+          "segment": "Sunter - Tanjung Priok",
+          "status": "yellow",
+          "speed_kmh": 45,
+          "travel_time_minutes": 25,
+          "coordinates": {
+            "start": {"lat": -6.1587, "lng": 106.9056},
+            "end": {"lat": -6.1044, "lng": 106.8800}
+          }
+        }
+      ]
+    },
+    {
+      "id": "jakarta_barat", 
+      "name": "Jakarta Barat",
+      "overall_status": "orange",
+      "roads": [
+        {
+          "road_name": "Jl. Panjang",
+          "segment": "Kebon Jeruk - Meruya",
+          "status": "red",
+          "speed_kmh": 20,
+          "travel_time_minutes": 45,
+          "coordinates": {
+            "start": {"lat": -6.1944, "lng": 106.7661},
+            "end": {"lat": -6.1944, "lng": 106.7369}
+          }
+        },
+        {
+          "road_name": "Jl. S. Parman",
+          "segment": "Grogol - Tomang",
+          "status": "orange",
+          "speed_kmh": 35,
+          "travel_time_minutes": 22,
+          "coordinates": {
+            "start": {"lat": -6.1751, "lng": 106.7953},
+            "end": {"lat": -6.1751, "lng": 106.8145}
+          }
+        },
+        {
+          "road_name": "Jl. Daan Mogot",
+          "segment": "Grogol - Cengkareng",
+          "status": "yellow",
+          "speed_kmh": 50,
+          "travel_time_minutes": 28,
+          "coordinates": {
+            "start": {"lat": -6.1751, "lng": 106.7953},
+            "end": {"lat": -6.1416, "lng": 106.7369}
+          }
+        }
+      ]
+    },
+    {
+      "id": "jakarta_timur",
+      "name": "Jakarta Timur",
+      "overall_status": "yellow",
+      "roads": [
+        {
+          "road_name": "Jl. Jend. Ahmad Yani",
+          "segment": "Cempaka Putih - Rawamangun",
+          "status": "orange",
+          "speed_kmh": 32,
+          "travel_time_minutes": 30,
+          "coordinates": {
+            "start": {"lat": -6.1751, "lng": 106.8645},
+            "end": {"lat": -6.1944, "lng": 106.8937}
+          }
+        },
+        {
+          "road_name": "Jl. Raya Bekasi",
+          "segment": "Pulogadung - Cakung",
+          "status": "green",
+          "speed_kmh": 58,
+          "travel_time_minutes": 25,
+          "coordinates": {
+            "start": {"lat": -6.1944, "lng": 106.8937},
+            "end": {"lat": -6.1751, "lng": 106.9520}
+          }
+        },
+        {
+          "road_name": "Jl. MT Haryono",
+          "segment": "Cawang - Pancoran",
+          "status": "red",
+          "speed_kmh": 18,
+          "travel_time_minutes": 40,
+          "coordinates": {
+            "start": {"lat": -6.2441, "lng": 106.8545},
+            "end": {"lat": -6.2441, "lng": 106.8837}
+          }
+        }
+      ]
+    }
+  ],
+  "toll_roads": [
+    {
+      "name": "Tol Dalam Kota",
+      "segments": [
+        {
+          "segment_name": "Tomang - Cawang",
+          "status": "yellow",
+          "speed_kmh": 65,
+          "travel_time_minutes": 35
+        },
+        {
+          "segment_name": "Cawang - Tanjung Priok", 
+          "status": "green",
+          "speed_kmh": 80,
+          "travel_time_minutes": 25
+        }
+      ]
+    },
+    {
+      "name": "Tol Lingkar Luar Jakarta",
+      "segments": [
+        {
+          "segment_name": "Cakung - Rorotan",
+          "status": "green", 
+          "speed_kmh": 75,
+          "travel_time_minutes": 20
+        },
+        {
+          "segment_name": "Cengkareng - Benda",
+          "status": "orange",
+          "speed_kmh": 45,
+          "travel_time_minutes": 30
+        }
+      ]
+    }
+  ],
+  "incidents": [
+    {
+      "id": "INC001",
+      "type": "kecelakaan",
+      "location": "Jl. MH Thamrin (depan Plaza Indonesia)",
+      "description": "Kecelakaan ringan 2 kendaraan",
+      "impact": "Penutupan 1 lajur",
+      "estimated_clear_time": "2025-08-07T15:00:00+07:00",
+      "coordinates": {"lat": -6.1944, "lng": 106.8229}
+    },
+    {
+      "id": "INC002", 
+      "type": "perbaikan_jalan",
+      "location": "Jl. Panjang (km 8)",
+      "description": "Perbaikan lubang jalan",
+      "impact": "Pengalihan lalu lintas",
+      "estimated_clear_time": "2025-08-07T17:00:00+07:00",
+      "coordinates": {"lat": -6.1944, "lng": 106.7661}
+    }
+  ],
+  "weather_impact": {
+    "current_weather": "berawan",
+    "visibility": "baik",
+    "impact_level": "minimal"
+  }
+}

@@ -1,0 +1,660 @@
+{
+  "metadata": {
+    "title": "Data Restoran Cepat Saji dengan Emisi Tertinggi di DKI Jakarta",
+    "description": "Daftar restoran cepat saji yang memiliki tingkat emisi karbon tertinggi berdasarkan volume operasional dan konsumsi energi",
+    "province": "DKI Jakarta",
+    "total_locations": 25,
+    "last_updated": "2025-08-08"
+  },
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "McDonald's Plaza Indonesia",
+      "brand": "McDonald's",
+      "address": "Plaza Indonesia, Jl. M.H. Thamrin No.Kav. 28-30, Jakarta Pusat",
+      "kelurahan": "Gondangdia",
+      "kecamatan": "Menteng",
+      "kota": "Jakarta Pusat",
+      "coordinates": {
+        "latitude": -6.1944,
+        "longitude": 106.8231
+      },
+      "emission_data": {
+        "co2_tons_per_year": 450.5,
+        "energy_consumption_kwh": 820000,
+        "waste_tons_per_year": 125.3,
+        "water_usage_liters": 2400000
+      },
+      "operational_details": {
+        "operating_hours": "24 jam",
+        "customer_capacity": 200,
+        "drive_thru": true,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food"]
+      }
+    },
+    {
+      "id": 2,
+      "name": "KFC Grand Indonesia",
+      "brand": "KFC",
+      "address": "Grand Indonesia Shopping Town, Jl. M.H. Thamrin No.1, Jakarta Pusat",
+      "kelurahan": "Kebon Melati",
+      "kecamatan": "Tanah Abang",
+      "kota": "Jakarta Pusat",
+      "coordinates": {
+        "latitude": -6.1953,
+        "longitude": 106.8216
+      },
+      "emission_data": {
+        "co2_tons_per_year": 425.8,
+        "energy_consumption_kwh": 780000,
+        "waste_tons_per_year": 118.7,
+        "water_usage_liters": 2100000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 180,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food"]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Burger King Senayan City",
+      "brand": "Burger King",
+      "address": "Senayan City, Jl. Asia Afrika No.8, Jakarta Selatan",
+      "kelurahan": "Gelora",
+      "kecamatan": "Tanah Abang",
+      "kota": "Jakarta Pusat",
+      "coordinates": {
+        "latitude": -6.2253,
+        "longitude": 106.7994
+      },
+      "emission_data": {
+        "co2_tons_per_year": 380.2,
+        "energy_consumption_kwh": 695000,
+        "waste_tons_per_year": 98.5,
+        "water_usage_liters": 1850000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 150,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood"]
+      }
+    },
+    {
+      "id": 4,
+      "name": "McDonald's Kelapa Gading",
+      "brand": "McDonald's",
+      "address": "Mall of Indonesia, Jl. Boulevard Barat Raya, Kelapa Gading, Jakarta Utara",
+      "kelurahan": "Kelapa Gading Barat",
+      "kecamatan": "Kelapa Gading",
+      "kota": "Jakarta Utara",
+      "coordinates": {
+        "latitude": -6.1456,
+        "longitude": 106.8978
+      },
+      "emission_data": {
+        "co2_tons_per_year": 415.7,
+        "energy_consumption_kwh": 760000,
+        "waste_tons_per_year": 112.4,
+        "water_usage_liters": 2200000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 220,
+        "drive_thru": true,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food"]
+      }
+    },
+    {
+      "id": 5,
+      "name": "KFC Sarinah",
+      "brand": "KFC",
+      "address": "Sarinah Thamrin, Jl. M.H. Thamrin No.11, Jakarta Pusat",
+      "kelurahan": "Gondangdia",
+      "kecamatan": "Menteng",
+      "kota": "Jakarta Pusat",
+      "coordinates": {
+        "latitude": -6.1867,
+        "longitude": 106.8237
+      },
+      "emission_data": {
+        "co2_tons_per_year": 395.3,
+        "energy_consumption_kwh": 720000,
+        "waste_tons_per_year": 105.8,
+        "water_usage_liters": 1950000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 21:00",
+        "customer_capacity": 160,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food"]
+      }
+    },
+    {
+      "id": 6,
+      "name": "Pizza Hut Central Park",
+      "brand": "Pizza Hut",
+      "address": "Central Park Mall, Jl. Letjen S. Parman No.28, Jakarta Barat",
+      "kelurahan": "Tanjung Duren Selatan",
+      "kecamatan": "Grogol Petamburan",
+      "kota": "Jakarta Barat",
+      "coordinates": {
+        "latitude": -6.1783,
+        "longitude": 106.7906
+      },
+      "emission_data": {
+        "co2_tons_per_year": 365.9,
+        "energy_consumption_kwh": 670000,
+        "waste_tons_per_year": 92.3,
+        "water_usage_liters": 1750000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 140,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food", "PHD"]
+      }
+    },
+    {
+      "id": 7,
+      "name": "Domino's Pizza Kuningan",
+      "brand": "Domino's Pizza",
+      "address": "Kuningan City, Jl. Prof. Dr. Satrio Kav.18, Jakarta Selatan",
+      "kelurahan": "Kuningan Timur",
+      "kecamatan": "Setiabudi",
+      "kota": "Jakarta Selatan",
+      "coordinates": {
+        "latitude": -6.2189,
+        "longitude": 106.8298
+      },
+      "emission_data": {
+        "co2_tons_per_year": 340.6,
+        "energy_consumption_kwh": 620000,
+        "waste_tons_per_year": 85.7,
+        "water_usage_liters": 1600000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 23:00",
+        "customer_capacity": 80,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food", "Domino's Delivery"]
+      }
+    },
+    {
+      "id": 8,
+      "name": "Texas Chicken Pondok Indah",
+      "brand": "Texas Chicken",
+      "address": "Pondok Indah Mall, Jl. Metro Pondok Indah, Jakarta Selatan",
+      "kelurahan": "Pondok Pinang",
+      "kecamatan": "Kebayoran Lama",
+      "kota": "Jakarta Selatan",
+      "coordinates": {
+        "latitude": -6.2643,
+        "longitude": 106.7836
+      },
+      "emission_data": {
+        "co2_tons_per_year": 325.4,
+        "energy_consumption_kwh": 590000,
+        "waste_tons_per_year": 82.1,
+        "water_usage_liters": 1520000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 120,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food"]
+      }
+    },
+    {
+      "id": 9,
+      "name": "A&W Blok M Square",
+      "brand": "A&W",
+      "address": "Blok M Square, Jl. Melawai Raya No.8, Jakarta Selatan",
+      "kelurahan": "Melawai",
+      "kecamatan": "Kebayoran Baru",
+      "kota": "Jakarta Selatan",
+      "coordinates": {
+        "latitude": -6.2441,
+        "longitude": 106.7983
+      },
+      "emission_data": {
+        "co2_tons_per_year": 310.8,
+        "energy_consumption_kwh": 565000,
+        "waste_tons_per_year": 78.9,
+        "water_usage_liters": 1450000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 110,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood"]
+      }
+    },
+    {
+      "id": 10,
+      "name": "Wendy's Summarecon",
+      "brand": "Wendy's",
+      "address": "Summarecon Mal Serpong, Jl. Boulevard Jend. Sudirman, Tangerang",
+      "kelurahan": "Lengkong Kulon",
+      "kecamatan": "Pagedangan",
+      "kota": "Jakarta Barat",
+      "coordinates": {
+        "latitude": -6.2417,
+        "longitude": 106.6308
+      },
+      "emission_data": {
+        "co2_tons_per_year": 295.2,
+        "energy_consumption_kwh": 540000,
+        "waste_tons_per_year": 74.6,
+        "water_usage_liters": 1380000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 100,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood"]
+      }
+    },
+    {
+      "id": 11,
+      "name": "McDonald's Cempaka Putih",
+      "brand": "McDonald's",
+      "address": "Jl. Cempaka Putih Tengah No.15, Jakarta Pusat",
+      "kelurahan": "Cempaka Putih Tengah",
+      "kecamatan": "Cempaka Putih",
+      "kota": "Jakarta Pusat",
+      "coordinates": {
+        "latitude": -6.1667,
+        "longitude": 106.8667
+      },
+      "emission_data": {
+        "co2_tons_per_year": 375.9,
+        "energy_consumption_kwh": 685000,
+        "waste_tons_per_year": 95.2,
+        "water_usage_liters": 1820000
+      },
+      "operational_details": {
+        "operating_hours": "24 jam",
+        "customer_capacity": 150,
+        "drive_thru": true,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food"]
+      }
+    },
+    {
+      "id": 12,
+      "name": "KFC Kemayoran",
+      "brand": "KFC",
+      "address": "Jakarta Fair Ground, Kemayoran, Jakarta Pusat",
+      "kelurahan": "Kemayoran",
+      "kecamatan": "Kemayoran",
+      "kota": "Jakarta Pusat",
+      "coordinates": {
+        "latitude": -6.1544,
+        "longitude": 106.8456
+      },
+      "emission_data": {
+        "co2_tons_per_year": 358.7,
+        "energy_consumption_kwh": 655000,
+        "waste_tons_per_year": 89.4,
+        "water_usage_liters": 1720000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 170,
+        "drive_thru": true,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food"]
+      }
+    },
+    {
+      "id": 13,
+      "name": "Burger King Mangga Dua",
+      "brand": "Burger King",
+      "address": "Mangga Dua Square, Jl. Mangga Dua Raya, Jakarta Utara",
+      "kelurahan": "Mangga Dua Selatan",
+      "kecamatan": "Sawah Besar",
+      "kota": "Jakarta Pusat",
+      "coordinates": {
+        "latitude": -6.1350,
+        "longitude": 106.8289
+      },
+      "emission_data": {
+        "co2_tons_per_year": 342.1,
+        "energy_consumption_kwh": 625000,
+        "waste_tons_per_year": 86.8,
+        "water_usage_liters": 1650000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 130,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood"]
+      }
+    },
+    {
+      "id": 14,
+      "name": "McDonald's Fatmawati",
+      "brand": "McDonald's",
+      "address": "Jl. RS. Fatmawati Raya No.15, Jakarta Selatan",
+      "kelurahan": "Cipete Selatan",
+      "kecamatan": "Cilandak",
+      "kota": "Jakarta Selatan",
+      "coordinates": {
+        "latitude": -6.2906,
+        "longitude": 106.7989
+      },
+      "emission_data": {
+        "co2_tons_per_year": 368.4,
+        "energy_consumption_kwh": 672000,
+        "waste_tons_per_year": 93.7,
+        "water_usage_liters": 1780000
+      },
+      "operational_details": {
+        "operating_hours": "24 jam",
+        "customer_capacity": 140,
+        "drive_thru": true,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food"]
+      }
+    },
+    {
+      "id": 15,
+      "name": "Pizza Hut Cibubur",
+      "brand": "Pizza Hut",
+      "address": "Cibubur Junction, Jl. Raya Jambore, Jakarta Timur",
+      "kelurahan": "Harjamukti",
+      "kecamatan": "Cimanggis",
+      "kota": "Jakarta Timur",
+      "coordinates": {
+        "latitude": -6.3756,
+        "longitude": 106.8956
+      },
+      "emission_data": {
+        "co2_tons_per_year": 328.6,
+        "energy_consumption_kwh": 600000,
+        "waste_tons_per_year": 83.2,
+        "water_usage_liters": 1580000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 125,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food", "PHD"]
+      }
+    },
+    {
+      "id": 16,
+      "name": "KFC Puri Indah",
+      "brand": "KFC",
+      "address": "Puri Indah Mall, Jl. Puri Agung, Jakarta Barat",
+      "kelurahan": "Kembangan Selatan",
+      "kecamatan": "Kembangan",
+      "kota": "Jakarta Barat",
+      "coordinates": {
+        "latitude": -6.1886,
+        "longitude": 106.7378
+      },
+      "emission_data": {
+        "co2_tons_per_year": 352.3,
+        "energy_consumption_kwh": 643000,
+        "waste_tons_per_year": 88.1,
+        "water_usage_liters": 1690000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 165,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food"]
+      }
+    },
+    {
+      "id": 17,
+      "name": "Subway Pakuwon Mall",
+      "brand": "Subway",
+      "address": "Pakuwon Mall, Jl. Panjang No.5, Jakarta Barat",
+      "kelurahan": "Kedoya Utara",
+      "kecamatan": "Kebon Jeruk",
+      "kota": "Jakarta Barat",
+      "coordinates": {
+        "latitude": -6.1794,
+        "longitude": 106.7647
+      },
+      "emission_data": {
+        "co2_tons_per_year": 285.7,
+        "energy_consumption_kwh": 520000,
+        "waste_tons_per_year": 72.4,
+        "water_usage_liters": 1320000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 60,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood"]
+      }
+    },
+    {
+      "id": 18,
+      "name": "McDonald's Daan Mogot",
+      "brand": "McDonald's",
+      "address": "Jl. Daan Mogot Km 11, Jakarta Barat",
+      "kelurahan": "Kalideres",
+      "kecamatan": "Kalideres",
+      "kota": "Jakarta Barat",
+      "coordinates": {
+        "latitude": -6.1486,
+        "longitude": 106.7000
+      },
+      "emission_data": {
+        "co2_tons_per_year": 392.8,
+        "energy_consumption_kwh": 716000,
+        "waste_tons_per_year": 99.6,
+        "water_usage_liters": 1890000
+      },
+      "operational_details": {
+        "operating_hours": "24 jam",
+        "customer_capacity": 180,
+        "drive_thru": true,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food"]
+      }
+    },
+    {
+      "id": 19,
+      "name": "Domino's Pizza Pluit",
+      "brand": "Domino's Pizza",
+      "address": "Pluit Village, Jl. Pluit Selatan Raya, Jakarta Utara",
+      "kelurahan": "Pluit",
+      "kecamatan": "Penjaringan",
+      "kota": "Jakarta Utara",
+      "coordinates": {
+        "latitude": -6.1194,
+        "longitude": 106.7931
+      },
+      "emission_data": {
+        "co2_tons_per_year": 312.4,
+        "energy_consumption_kwh": 570000,
+        "waste_tons_per_year": 79.1,
+        "water_usage_liters": 1460000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 23:00",
+        "customer_capacity": 70,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food", "Domino's Delivery"]
+      }
+    },
+    {
+      "id": 20,
+      "name": "Texas Chicken Cempaka Mas",
+      "brand": "Texas Chicken",
+      "address": "Cempaka Mas Shopping Centre, Jakarta Pusat",
+      "kelurahan": "Cempaka Putih Timur",
+      "kecamatan": "Cempaka Putih",
+      "kota": "Jakarta Pusat",
+      "coordinates": {
+        "latitude": -6.1583,
+        "longitude": 106.8728
+      },
+      "emission_data": {
+        "co2_tons_per_year": 298.9,
+        "energy_consumption_kwh": 545000,
+        "waste_tons_per_year": 75.7,
+        "water_usage_liters": 1400000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 90,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food"]
+      }
+    },
+    {
+      "id": 21,
+      "name": "Carl's Jr. Gandaria City",
+      "brand": "Carl's Jr.",
+      "address": "Gandaria City, Jl. Sultan Iskandar Muda, Jakarta Selatan",
+      "kelurahan": "Gandaria Utara",
+      "kecamatan": "Kebayoran Baru",
+      "kota": "Jakarta Selatan",
+      "coordinates": {
+        "latitude": -6.2419,
+        "longitude": 106.7828
+      },
+      "emission_data": {
+        "co2_tons_per_year": 276.5,
+        "energy_consumption_kwh": 505000,
+        "waste_tons_per_year": 70.1,
+        "water_usage_liters": 1280000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 85,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood"]
+      }
+    },
+    {
+      "id": 22,
+      "name": "Burger King Lippo Mall",
+      "brand": "Burger King",
+      "address": "Lippo Mall Kemang, Jl. Kemang Raya No.2, Jakarta Selatan",
+      "kelurahan": "Bangka",
+      "kecamatan": "Mampang Prapatan",
+      "kota": "Jakarta Selatan",
+      "coordinates": {
+        "latitude": -6.2628,
+        "longitude": 106.8167
+      },
+      "emission_data": {
+        "co2_tons_per_year": 318.7,
+        "energy_consumption_kwh": 582000,
+        "waste_tons_per_year": 80.8,
+        "water_usage_liters": 1510000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 105,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood"]
+      }
+    },
+    {
+      "id": 23,
+      "name": "McDonald's Cikini",
+      "brand": "McDonald's",
+      "address": "Jl. Cikini Raya No.58, Jakarta Pusat",
+      "kelurahan": "Cikini",
+      "kecamatan": "Menteng",
+      "kota": "Jakarta Pusat",
+      "coordinates": {
+        "latitude": -6.1939,
+        "longitude": 106.8394
+      },
+      "emission_data": {
+        "co2_tons_per_year": 356.2,
+        "energy_consumption_kwh": 650000,
+        "waste_tons_per_year": 90.3,
+        "water_usage_liters": 1710000
+      },
+      "operational_details": {
+        "operating_hours": "24 jam",
+        "customer_capacity": 135,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food"]
+      }
+    },
+    {
+      "id": 24,
+      "name": "KFC Sunter Mall",
+      "brand": "KFC",
+      "address": "Sunter Mall, Jl. Danau Sunter Utara, Jakarta Utara",
+      "kelurahan": "Sunter Agung",
+      "kecamatan": "Tanjung Priok",
+      "kota": "Jakarta Utara",
+      "coordinates": {
+        "latitude": -6.1408,
+        "longitude": 106.8683
+      },
+      "emission_data": {
+        "co2_tons_per_year": 334.6,
+        "energy_consumption_kwh": 611000,
+        "waste_tons_per_year": 84.9,
+        "water_usage_liters": 1620000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 145,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food"]
+      }
+    },
+    {
+      "id": 25,
+      "name": "Pizza Hut Taman Anggrek",
+      "brand": "Pizza Hut",
+      "address": "Taman Anggrek Mall, Jl. S. Parman Kav 21, Jakarta Barat",
+      "kelurahan": "Tomang",
+      "kecamatan": "Grogol Petamburan",
+      "kota": "Jakarta Barat",
+      "coordinates": {
+        "latitude": -6.1781,
+        "longitude": 106.7900
+      },
+      "emission_data": {
+        "co2_tons_per_year": 348.1,
+        "energy_consumption_kwh": 635000,
+        "waste_tons_per_year": 88.3,
+        "water_usage_liters": 1670000
+      },
+      "operational_details": {
+        "operating_hours": "10:00 - 22:00",
+        "customer_capacity": 130,
+        "drive_thru": false,
+        "delivery_services": ["GoFood", "GrabFood", "Shopee Food", "PHD"]
+      }
+    }
+  ],
+  "summary": {
+    "total_co2_emissions_tons_per_year": 8247.2,
+    "average_co2_per_restaurant": 329.9,
+    "highest_emitter": {
+      "name": "McDonald's Plaza Indonesia",
+      "emissions": 450.5
+    },
+    "lowest_emitter": {
+      "name": "Carl's Jr. Gandaria City",
+      "emissions": 276.5
+    },
+    "brands_distribution": {
+      "McDonald's": 7,
+      "KFC": 6,
+      "Burger King": 4,
+      "Pizza Hut": 3,
+      "Domino's Pizza": 2,
+      "Texas Chicken": 2,
+      "A&W": 1,
+      "Wendy's": 1,
+      "Subway": 1,
+      "Carl's Jr.": 1
+    }
+  }
+}
