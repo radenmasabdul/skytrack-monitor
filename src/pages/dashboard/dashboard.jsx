@@ -11,7 +11,7 @@ import {
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import Stats from "../../components/Stats";
-import DataView from "../../components/DataView";
+import { DataView } from "../../components/DataView";
 import CardIspu from "../../components/CardIspu";
 import airIndex from "../../hooks/airIndex.json";
 import polutionIndex from "../../hooks/polutionIndex.json";
