@@ -12,6 +12,7 @@ import L from "leaflet";
 import { DataViewPolution } from "../../components/DataView";
 import Stats from "../../components/Stats";
 import factoryIndex from "../../hooks/factoryIndex.json";
+import schoolIndex from "../../hooks/schoolIndex.json";
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -28,6 +29,21 @@ const DashboardEmisi = () => {
     iconAnchor: [15, 30],
     popupAnchor: [0, -30],
   });
+
+  const schoolsIcon = new L.Icon({
+    iconUrl: "https://cdn-icons-png.flaticon.com/512/2602/2602414.png",
+    iconSize: [30, 30],
+    iconAnchor: [15, 30],
+    popupAnchor: [0, -30],
+  });
+
+  const allSchools = [
+    ...schoolIndex.ranking_emisi_terendah_ke_tertinggi.kategori_sangat_rendah,
+    ...schoolIndex.ranking_emisi_terendah_ke_tertinggi.kategori_rendah,
+    ...schoolIndex.ranking_emisi_terendah_ke_tertinggi.kategori_sedang,
+    ...schoolIndex.ranking_emisi_terendah_ke_tertinggi.kategori_tinggi,
+    ...schoolIndex.ranking_emisi_terendah_ke_tertinggi.kategori_sangat_tinggi,
+  ];
 
   return (
     <div className="relative w-full h-[calc(100vh-64px)]">
@@ -50,7 +66,6 @@ const DashboardEmisi = () => {
             />
           </LayersControl.BaseLayer>
         </LayersControl>
-
         {selectedView === "Pabrik" &&
           factoryIndex.factories.map((factory) => (
             <Marker
@@ -71,6 +86,24 @@ const DashboardEmisi = () => {
                 {factory.location.kota_administrasi}
                 <br />
                 Industri: {factory.industry_type}
+              </Popup>
+            </Marker>
+          ))}
+        {selectedView === "Sekolah" &&
+          allSchools.map((school) => (
+            <Marker
+              key={school.peringkat}
+              position={[school.koordinat.latitude, school.koordinat.longitude]}
+              icon={schoolsIcon}
+            >
+              <Popup>
+                <strong>{school.nama}</strong>
+                <br />
+                Emisi: {school.estimasi_emisi} ({school.kategori})
+                <br />
+                Wilayah: {school.wilayah}
+                <br />
+                Jumlah siswa: {school.jumlah_siswa}
               </Popup>
             </Marker>
           ))}
