@@ -13,6 +13,7 @@ import { DataViewPolution } from "../../components/DataView";
 import Stats from "../../components/Stats";
 import factoryIndex from "../../hooks/factoryIndex.json";
 import schoolIndex from "../../hooks/schoolIndex.json";
+import restaurantIndex from "../../hooks/restaurantIndex.json";
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -32,6 +33,13 @@ const DashboardEmisi = () => {
 
   const schoolsIcon = new L.Icon({
     iconUrl: "https://cdn-icons-png.flaticon.com/512/2602/2602414.png",
+    iconSize: [30, 30],
+    iconAnchor: [15, 30],
+    popupAnchor: [0, -30],
+  });
+
+  const restaurantIcon = new L.Icon({
+    iconUrl: "https://cdn-icons-png.flaticon.com/512/948/948036.png",
     iconSize: [30, 30],
     iconAnchor: [15, 30],
     popupAnchor: [0, -30],
@@ -66,6 +74,7 @@ const DashboardEmisi = () => {
             />
           </LayersControl.BaseLayer>
         </LayersControl>
+
         {selectedView === "Pabrik" &&
           factoryIndex.factories.map((factory) => (
             <Marker
@@ -89,6 +98,7 @@ const DashboardEmisi = () => {
               </Popup>
             </Marker>
           ))}
+
         {selectedView === "Sekolah" &&
           allSchools.map((school) => (
             <Marker
@@ -104,6 +114,34 @@ const DashboardEmisi = () => {
                 Wilayah: {school.wilayah}
                 <br />
                 Jumlah siswa: {school.jumlah_siswa}
+              </Popup>
+            </Marker>
+          ))}
+
+        {selectedView === "Makanan" &&
+          restaurantIndex.restaurants.map((restaurant) => (
+            <Marker
+              key={restaurant.id}
+              position={[
+                restaurant.coordinates.latitude,
+                restaurant.coordinates.longitude,
+              ]}
+              icon={restaurantIcon}
+            >
+              <Popup>
+                <strong>{restaurant.name}</strong>
+                <br />
+                CO2 Emission: {restaurant.emission_data.co2_tons_per_year}{" "}
+                ton/tahun
+                <br />
+                Lokasi: {restaurant.kecamatan}, {restaurant.kota}
+                <br />
+                Brand: {restaurant.brand}
+                <br />
+                Jam Operasi: {restaurant.operational_details.operating_hours}
+                <br />
+                Delivery:{" "}
+                {restaurant.operational_details.delivery_services.join(", ")}
               </Popup>
             </Marker>
           ))}
